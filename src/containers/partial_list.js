@@ -7,6 +7,11 @@ var id = 0;
 class PartialList extends Component {
 
     renderPartialList() {
+        if (!this.props.part.partials) {
+            return (
+                ""
+            )
+        }
         return this.props.part.partials.map(function(partial) {
             id++;
             return (

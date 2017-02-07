@@ -21887,6 +21887,10 @@
 	
 	var _partial_list2 = _interopRequireDefault(_partial_list);
 	
+	var _part_section_list = __webpack_require__(216);
+	
+	var _part_section_list2 = _interopRequireDefault(_part_section_list);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21909,12 +21913,14 @@
 	    _createClass(PartsList, [{
 	        key: 'renderParts',
 	        value: function renderParts() {
+	
 	            return this.props.parts.map(function (part) {
 	                id++;
 	                return _react2.default.createElement(
 	                    'div',
 	                    { key: id, className: 'part' },
 	                    _react2.default.createElement(_part_header2.default, { part: part }),
+	                    _react2.default.createElement(_part_section_list2.default, { part: part }),
 	                    _react2.default.createElement(_partial_list2.default, { part: part })
 	                );
 	            });
@@ -22182,34 +22188,39 @@
 	        type: "link",
 	        target: "https://learn.adafruit.com/adafruit-pi-cobbler-kit/overview",
 	        value: "Tutorial Overview * (Adafruit)"
-	    }],
-	    partials: []
+	    }]
 	}, {
 	    name: "Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685",
 	    description: [{
 	        type: "text",
 	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://www.adafruit.com/product/815",
-	        value: "Product-Page"
-	    }, {
-	        type: "link",
-	        target: "https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf",
-	        value: "DataSheet (PDF)"
 	    }],
-	    partials: []
+	    sections: [{
+	        section: "Documentation",
+	        entries: [{
+	            type: "link",
+	            target: "https://www.adafruit.com/product/815",
+	            value: "Product-Page"
+	        }, {
+	            type: "link",
+	            target: "https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf",
+	            value: "DataSheet (PDF)"
+	        }]
+	    }]
 	}, {
 	    name: "Adafruit JTAG (2x10 2.54mm) to SWD (2x5 1.27mm) Cable Adapter Board",
 	    description: [{
 	        type: "text",
 	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://www.adafruit.com/product/2094",
-	        value: "Product-Page"
 	    }],
-	    partials: []
+	    sections: [{
+	        section: "Documentation",
+	        entries: [{
+	            type: "link",
+	            target: "https://www.adafruit.com/product/2094",
+	            value: "Product-Page"
+	        }]
+	    }]
 	}, {
 	    name: "USB LiIon/LiPoly charger MCP73833",
 	    description: [{
@@ -22223,8 +22234,7 @@
 	        type: "link",
 	        target: "http://ww1.microchip.com/downloads/en/DeviceDoc/22005b.pdf",
 	        value: "MCP73833 Datsheet (PDF)"
-	    }],
-	    partials: []
+	    }]
 	}, {
 	    name: "AdafruitPowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost",
 	    description: [{
@@ -22238,41 +22248,60 @@
 	        type: "link",
 	        target: "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
 	        value: "TPS61090 Datsheet (PDF)"
-	    }],
-	    partials: []
+	    }]
+	}, {
+	    name: "ADS1115 - 16-Bit ADC - 4 Channel with Programmable Gain Amplifier",
+	    description: [{
+	        type: "text",
+	        value: ""
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts",
+	        value: "Tutorial Overview (Adafruit)"
+	    }, {
+	        type: "link",
+	        target: "http://www.ti.com/lit/ds/symlink/ads1115.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "BSS138 - 4-CHANNEL I2C-SAFE BI-DIRECTIONAL LOGIC LEVEL CONVERTER",
+	    description: [{
+	        type: "text",
+	        value: ""
+	    }, {
+	        type: "link",
+	        target: "https://www.adafruit.com/product/757",
+	        value: "Adafruit Product-Page"
+	    }, {
+	        type: "link",
+	        target: "https://cdn-shop.adafruit.com/datasheets/BSS138.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "SWD (2x5 1.27mm) Cable Breakout Board",
+	    description: [{
+	        type: "text",
+	        value: ""
+	    }, {
+	        type: "link",
+	        target: "https://www.adafruit.com/products/2743",
+	        value: "Adafruit Product-Page"
+	    }]
+	}, {
+	    name: "DS2413 1-Wire Two GPIO Controller Breakout",
+	    description: [{
+	        type: "text",
+	        value: ""
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-1-wire-gpio-breakout-ds2413",
+	        value: "Tutorial Overview (Adafruit)"
+	    }, {
+	        type: "link",
+	        target: "https://datasheets.maximintegrated.com/en/ds/DS2413.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
 	}];
-	
-	/*
-	 65576597.html
-	 <h2></h2>
-	
-	 <ul><li><a href=""></a></li>
-	 <li><a href=""></a></li></ul>
-	
-	 <h2>ADS1115 - 16-Bit ADC - 4 Channel with Programmable Gain Amplifier</h2>
-	
-	 <ul><li><a href="https://learn.adafruit.com/adafruit-4-channel-adc-breakouts">Tutorial Overview (Adafruit)</a></li><li><a href="http://www.ti.com/lit/ds/symlink/ads1115.pdf">Datasheet</a></li></ul>
-	
-	 <h2>BSS138 - 4-CHANNEL I2C-SAFE BI-DIRECTIONAL LOGIC LEVEL CONVERTER</h2>
-	
-	 <ul><li><a href="https://www.adafruit.com/product/757">Adafruit Product-Page</a></li><li><a href="https://cdn-shop.adafruit.com/datasheets/BSS138.pdf">Datasheet</a></li></ul>
-	
-	 <h2>SWD (2x5 1.27mm) Cable Breakout Board</h2>
-	
-	 <ul><li><a href="https://www.adafruit.com/products/2743">Adafruit Product-Page</a></li></ul>
-	
-	 <h2>DS2413 1-Wire Two GPIO Controller Breakout</h2>
-	
-	 <ul><li><a href="https://learn.adafruit.com/adafruit-1-wire-gpio-breakout-ds2413">Tutorial Overview (Adafruit)</a></li><li><a href="https://datasheets.maximintegrated.com/en/ds/DS2413.pdf">Datasheet</a></li></ul>
-	 */
-	
-	/*
-	 {"name": "Adafruit Pi Cobbler"},
-	 {"name": "Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685"},
-	 {"name": "Adafruit JTAG (2x10 2.54mm) to SWD (2x5 1.27mm) Cable Adapter Board"},
-	 {"name": "USB LiIon/LiPoly charger MCP73833"},
-	 {"name": "AdafruitPowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost"}
-	 */
 
 /***/ },
 /* 210 */
@@ -22434,6 +22463,9 @@
 	    _createClass(PartialList, [{
 	        key: 'renderPartialList',
 	        value: function renderPartialList() {
+	            if (!this.props.part.partials) {
+	                return "";
+	            }
 	            return this.props.part.partials.map(function (partial) {
 	                id++;
 	                return _react2.default.createElement(
@@ -22749,6 +22781,81 @@
 	}(_react.Component);
 	
 	exports.default = Link;
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _partial_section_entries = __webpack_require__(214);
+	
+	var _partial_section_entries2 = _interopRequireDefault(_partial_section_entries);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var PartSectionList = function (_Component) {
+	    _inherits(PartSectionList, _Component);
+	
+	    function PartSectionList() {
+	        _classCallCheck(this, PartSectionList);
+	
+	        return _possibleConstructorReturn(this, (PartSectionList.__proto__ || Object.getPrototypeOf(PartSectionList)).apply(this, arguments));
+	    }
+	
+	    _createClass(PartSectionList, [{
+	        key: 'renderSectionList',
+	        value: function renderSectionList() {
+	            if (!this.props.part.sections) {
+	                return "";
+	            }
+	            return this.props.part.sections.map(function (section) {
+	                id++;
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: id },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        section.section
+	                    ),
+	                    _react2.default.createElement(_partial_section_entries2.default, { entries: section.entries })
+	                );
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'ul',
+	                { className: 'list-unstyled partial-section-list' },
+	                this.renderSectionList()
+	            );
+	        }
+	    }]);
+	
+	    return PartSectionList;
+	}(_react.Component);
+	
+	exports.default = PartSectionList;
 
 /***/ }
 /******/ ]);

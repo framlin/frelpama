@@ -11,8 +11,7 @@ module.exports = [
                 target: "https://learn.adafruit.com/adafruit-pi-cobbler-kit/overview",
                 value: "Tutorial Overview * (Adafruit)"
             }
-        ],
-        partials: []
+        ]
     },
     {
         name: "Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685",
@@ -21,18 +20,25 @@ module.exports = [
                 type: "text",
                 value: ""
             },
-            {
-                type: "link",
-                target: "https://www.adafruit.com/product/815",
-                value: "Product-Page"
-            },
-            {
-                type: "link",
-                target: "https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf",
-                value: "DataSheet (PDF)"
-            }
+
         ],
-        partials: []
+        sections: [
+            {
+                section: "Documentation",
+                entries: [
+                    {
+                        type: "link",
+                        target: "https://www.adafruit.com/product/815",
+                        value: "Product-Page"
+                    },
+                    {
+                        type: "link",
+                        target: "https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf",
+                        value: "DataSheet (PDF)"
+                    }
+                ]
+            }
+        ]
     },
     {
         name: "Adafruit JTAG (2x10 2.54mm) to SWD (2x5 1.27mm) Cable Adapter Board",
@@ -40,14 +46,20 @@ module.exports = [
             {
                 type: "text",
                 value: ""
-            },
-            {
-                type: "link",
-                target: "https://www.adafruit.com/product/2094",
-                value: "Product-Page"
             }
         ],
-        partials: []
+        sections: [
+            {
+                section: "Documentation",
+                entries: [
+                    {
+                        type: "link",
+                        target: "https://www.adafruit.com/product/2094",
+                        value: "Product-Page"
+                    }
+                ]
+            },
+        ]
     },
     {
         name: "USB LiIon/LiPoly charger MCP73833",
@@ -66,8 +78,7 @@ module.exports = [
                 target: "http://ww1.microchip.com/downloads/en/DeviceDoc/22005b.pdf",
                 value: "MCP73833 Datsheet (PDF)"
             }
-        ],
-        partials: []
+        ]
     },
     {
         name: "AdafruitPowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost",
@@ -86,39 +97,79 @@ module.exports = [
                 target: "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
                 value: "TPS61090 Datsheet (PDF)"
             }
-        ],
-        partials: []
+        ]
+    },
+    {
+        name: "ADS1115 - 16-Bit ADC - 4 Channel with Programmable Gain Amplifier",
+        description: [
+            {
+                type: "text",
+                value: ""
+            },
+            {
+                type: "link",
+                target: "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts",
+                value: "Tutorial Overview (Adafruit)"
+            },
+            {
+                type: "link",
+                target: "http://www.ti.com/lit/ds/symlink/ads1115.pdf",
+                value: "Datasheet (PDF)"
+            }
+        ]
+    },
+    {
+        name: "BSS138 - 4-CHANNEL I2C-SAFE BI-DIRECTIONAL LOGIC LEVEL CONVERTER",
+        description: [
+            {
+                type: "text",
+                value: ""
+            },
+            {
+                type: "link",
+                target: "https://www.adafruit.com/product/757",
+                value: "Adafruit Product-Page"
+            },
+            {
+                type: "link",
+                target: "https://cdn-shop.adafruit.com/datasheets/BSS138.pdf",
+                value: "Datasheet (PDF)"
+            }
+        ]
+    },
+    {
+        name: "SWD (2x5 1.27mm) Cable Breakout Board",
+        description: [
+            {
+                type: "text",
+                value: ""
+            },
+            {
+                type: "link",
+                target: "https://www.adafruit.com/products/2743",
+                value: "Adafruit Product-Page"
+            }
+        ]
+    },
+    {
+        name: "DS2413 1-Wire Two GPIO Controller Breakout",
+        description: [
+            {
+                type: "text",
+                value: ""
+            },
+            {
+                type: "link",
+                target: "https://learn.adafruit.com/adafruit-1-wire-gpio-breakout-ds2413",
+                value: "Tutorial Overview (Adafruit)"
+            },
+            {
+                type: "link",
+                target: "https://datasheets.maximintegrated.com/en/ds/DS2413.pdf",
+                value: "Datasheet (PDF)"
+            }
+        ]
     }
-]
 
-/*
- 65576597.html
- <h2></h2>
+];
 
- <ul><li><a href=""></a></li>
- <li><a href=""></a></li></ul>
-
- <h2>ADS1115 - 16-Bit ADC - 4 Channel with Programmable Gain Amplifier</h2>
-
- <ul><li><a href="https://learn.adafruit.com/adafruit-4-channel-adc-breakouts">Tutorial Overview (Adafruit)</a></li><li><a href="http://www.ti.com/lit/ds/symlink/ads1115.pdf">Datasheet</a></li></ul>
-
- <h2>BSS138 - 4-CHANNEL I2C-SAFE BI-DIRECTIONAL LOGIC LEVEL CONVERTER</h2>
-
- <ul><li><a href="https://www.adafruit.com/product/757">Adafruit Product-Page</a></li><li><a href="https://cdn-shop.adafruit.com/datasheets/BSS138.pdf">Datasheet</a></li></ul>
-
- <h2>SWD (2x5 1.27mm) Cable Breakout Board</h2>
-
- <ul><li><a href="https://www.adafruit.com/products/2743">Adafruit Product-Page</a></li></ul>
-
- <h2>DS2413 1-Wire Two GPIO Controller Breakout</h2>
-
- <ul><li><a href="https://learn.adafruit.com/adafruit-1-wire-gpio-breakout-ds2413">Tutorial Overview (Adafruit)</a></li><li><a href="https://datasheets.maximintegrated.com/en/ds/DS2413.pdf">Datasheet</a></li></ul>
- */
-
-/*
- {"name": "Adafruit Pi Cobbler"},
- {"name": "Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685"},
- {"name": "Adafruit JTAG (2x10 2.54mm) to SWD (2x5 1.27mm) Cable Adapter Board"},
- {"name": "USB LiIon/LiPoly charger MCP73833"},
- {"name": "AdafruitPowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost"}
- */
