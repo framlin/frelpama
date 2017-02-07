@@ -1,0 +1,21 @@
+.part-header {
+    background-color: antiquewhite;
+}
+.partial-list {
+    border-bottom-style: dashed;
+    border-bottom-color:crimson;
+}
+.partial {
+    margin-top: 10px;
+}
+
+.partial-list-entry {
+    padding: 10px;
+}
+.partial-list-entry:nth-child(odd) {
+    background-color: #fffce5;
+}
+
+.link, .link:visited {
+    color: darkred;
+}
