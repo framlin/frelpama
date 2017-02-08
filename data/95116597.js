@@ -33,11 +33,39 @@ module.exports = [
                         ]
                     }
                 ]
+            },
+            {
+                type: "LoRa Tranceiver",
+                name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
+                sections: [
+                    {
+                        section: "Documentation",
+                        entries: [
+                            {
+                                type: "link",
+                                target: "http://cgi.ebay.de/ws/eBayISAPI.dll?ViewItem&item=171363005217#ht_585wt_1165",
+                                value: "Ebay/anarduino - Product Page"
+                            },
+                            {
+                                type: "link",
+                                target: "http://www.hoperf.com/rf_transceiver/lora/RFM95W.html",
+                                value: "HopeRF - Product Page"
+                            },
+                            {
+                                type: "link",
+                                target: "http://www.anarduino.com/docs/RFM95_96_97_98W.pdf",
+                                value: "Datasheet (PDF)"
+                            }
+                        ]
+                    }
+                ]
             }
+
         ]
 
     }
 ];
 /*
  95116597.html
+
  */

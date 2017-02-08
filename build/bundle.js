@@ -69,7 +69,7 @@
 	
 	var _app2 = _interopRequireDefault(_app);
 	
-	var _reducers = __webpack_require__(202);
+	var _reducers = __webpack_require__(208);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
@@ -21879,15 +21879,15 @@
 	
 	var _reactRedux = __webpack_require__(160);
 	
-	var _part_header = __webpack_require__(210);
+	var _part_header = __webpack_require__(202);
 	
 	var _part_header2 = _interopRequireDefault(_part_header);
 	
-	var _partial_list = __webpack_require__(211);
+	var _partial_list = __webpack_require__(204);
 	
 	var _partial_list2 = _interopRequireDefault(_partial_list);
 	
-	var _section_list = __webpack_require__(218);
+	var _section_list = __webpack_require__(206);
 	
 	var _section_list2 = _interopRequireDefault(_section_list);
 	
@@ -21956,12 +21956,495 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _link = __webpack_require__(203);
+	
+	var _link2 = _interopRequireDefault(_link);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0,
+	    id2 = 0;
+	
+	var PartHeader = function (_Component) {
+	    _inherits(PartHeader, _Component);
+	
+	    function PartHeader() {
+	        _classCallCheck(this, PartHeader);
+	
+	        return _possibleConstructorReturn(this, (PartHeader.__proto__ || Object.getPrototypeOf(PartHeader)).apply(this, arguments));
+	    }
+	
+	    _createClass(PartHeader, [{
+	        key: 'renderText',
+	        value: function renderText(desc) {
+	            var text = "";
+	            text = desc.value;
+	            if (text.length > 0) {
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: id2, className: 'part-header-description' },
+	                    text
+	                );
+	            } else {
+	                return "";
+	            }
+	        }
+	    }, {
+	        key: 'renderLink',
+	        value: function renderLink(desc) {
+	            return _react2.default.createElement(
+	                'li',
+	                { key: id2 },
+	                _react2.default.createElement(_link2.default, { link: desc })
+	            );
+	        }
+	    }, {
+	        key: 'renderDescription',
+	        value: function renderDescription() {
+	            var me = this;
+	            return this.props.part.description.map(function (descr) {
+	                id2++;
+	                if (descr.type === "text") {
+	                    return me.renderText(descr);
+	                } else if (descr.type === "link") {
+	                    return me.renderLink(descr);
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'renderPartHeader',
+	        value: function renderPartHeader() {
+	            var name = this.props.part.name;
+	
+	            return _react2.default.createElement(
+	                'div',
+	                { key: id },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'part-header' },
+	                    name
+	                ),
+	                _react2.default.createElement(
+	                    'ul',
+	                    { className: 'list-unstyled' },
+	                    this.renderDescription()
+	                )
+	            );
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            id++;
+	            return _react2.default.createElement(
+	                'div',
+	                { key: id },
+	                this.renderPartHeader()
+	            );
+	        }
+	    }]);
+	
+	    return PartHeader;
+	}(_react.Component);
+	
+	exports.default = PartHeader;
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var Link = function (_Component) {
+	    _inherits(Link, _Component);
+	
+	    function Link() {
+	        _classCallCheck(this, Link);
+	
+	        return _possibleConstructorReturn(this, (Link.__proto__ || Object.getPrototypeOf(Link)).apply(this, arguments));
+	    }
+	
+	    _createClass(Link, [{
+	        key: "renderLink",
+	        value: function renderLink(entry) {
+	            var label = "";
+	            var href = "";
+	
+	            label = entry.value;
+	            href = entry.target;
+	            return _react2.default.createElement(
+	                "a",
+	                { className: "link", href: href },
+	                " == ",
+	                label,
+	                " == "
+	            );
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            return this.renderLink(this.props.link);
+	        }
+	    }]);
+	
+	    return Link;
+	}(_react.Component);
+	
+	exports.default = Link;
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _partial_header = __webpack_require__(205);
+	
+	var _partial_header2 = _interopRequireDefault(_partial_header);
+	
+	var _section_list = __webpack_require__(206);
+	
+	var _section_list2 = _interopRequireDefault(_section_list);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var PartialList = function (_Component) {
+	    _inherits(PartialList, _Component);
+	
+	    function PartialList() {
+	        _classCallCheck(this, PartialList);
+	
+	        return _possibleConstructorReturn(this, (PartialList.__proto__ || Object.getPrototypeOf(PartialList)).apply(this, arguments));
+	    }
+	
+	    _createClass(PartialList, [{
+	        key: 'renderPartialList',
+	        value: function renderPartialList() {
+	            if (!this.props.part.partials) {
+	                return "";
+	            }
+	            return this.props.part.partials.map(function (partial) {
+	                id++;
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: id, className: 'partial-list-entry' },
+	                    _react2.default.createElement(_partial_header2.default, { partial: partial }),
+	                    _react2.default.createElement(_section_list2.default, { sections: partial.sections })
+	                );
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	
+	            return _react2.default.createElement(
+	                'ul',
+	                { className: 'list-unstyled partial-list' },
+	                this.renderPartialList()
+	            );
+	        }
+	    }]);
+	
+	    return PartialList;
+	}(_react.Component);
+	
+	exports.default = PartialList;
+	
+	/*
+	partials: [
+	    {
+	        name: "STM32F429ZIT6U",
+	        description: [
+	            {
+	                section: "Documentation",
+	                entries: [
+	                    {
+	                        type: 'link',
+	                        target: "http://www.st.com/en/microcontrollers/stm32f429zi.html",
+	                        value: "Product-Page"
+	                    },
+	                    {
+	                        type: 'link',
+	                        target: "http://www.st.com/content/ccc/resource/technical/document/user_manual/2f/71/ba/b8/75/54/47/cf/DM00105879.pdf/files/DM00105879.pdf/jcr:content/translations/en.DM00105879.pdf",
+	                        value: "UM1725 - STM32F4 User Manual: Description of STM32F4xx HAL drivers (PDF)"
+	                    }
+	                ]
+	            }
+	        ]
+	    }
+	]
+	*/
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var PartialHeader = function (_Component) {
+	    _inherits(PartialHeader, _Component);
+	
+	    function PartialHeader() {
+	        _classCallCheck(this, PartialHeader);
+	
+	        return _possibleConstructorReturn(this, (PartialHeader.__proto__ || Object.getPrototypeOf(PartialHeader)).apply(this, arguments));
+	    }
+	
+	    _createClass(PartialHeader, [{
+	        key: "render",
+	        value: function render() {
+	            var partial = this.props.partial;
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "partial" },
+	                _react2.default.createElement(
+	                    "h3",
+	                    { className: "partial-header" },
+	                    partial.type
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "partial-header-name" },
+	                    partial.name
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return PartialHeader;
+	}(_react.Component);
+	
+	exports.default = PartialHeader;
+
+/***/ },
+/* 206 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _section_entries = __webpack_require__(207);
+	
+	var _section_entries2 = _interopRequireDefault(_section_entries);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var SectionList = function (_Component) {
+	    _inherits(SectionList, _Component);
+	
+	    function SectionList() {
+	        _classCallCheck(this, SectionList);
+	
+	        return _possibleConstructorReturn(this, (SectionList.__proto__ || Object.getPrototypeOf(SectionList)).apply(this, arguments));
+	    }
+	
+	    _createClass(SectionList, [{
+	        key: 'renderSectionList',
+	        value: function renderSectionList() {
+	
+	            if (!this.props.sections) {
+	                return "";
+	            }
+	            return this.props.sections.map(function (section) {
+	                id++;
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: id, className: 'section' },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        section.section
+	                    ),
+	                    _react2.default.createElement(_section_entries2.default, { entries: section.entries })
+	                );
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'ul',
+	                { className: 'list-unstyled section-list' },
+	                this.renderSectionList()
+	            );
+	        }
+	    }]);
+	
+	    return SectionList;
+	}(_react.Component);
+	
+	exports.default = SectionList;
+
+/***/ },
+/* 207 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _link = __webpack_require__(203);
+	
+	var _link2 = _interopRequireDefault(_link);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var SectionEntries = function (_Component) {
+	    _inherits(SectionEntries, _Component);
+	
+	    function SectionEntries() {
+	        _classCallCheck(this, SectionEntries);
+	
+	        return _possibleConstructorReturn(this, (SectionEntries.__proto__ || Object.getPrototypeOf(SectionEntries)).apply(this, arguments));
+	    }
+	
+	    _createClass(SectionEntries, [{
+	        key: 'renderSectionEntries',
+	        value: function renderSectionEntries() {
+	            var me = this;
+	            return this.props.entries.map(function (entry) {
+	                id++;
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: id, className: 'section-entry' },
+	                    _react2.default.createElement(_link2.default, { link: entry })
+	                );
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'ul',
+	                { className: 'list-unstyled section-entries' },
+	                this.renderSectionEntries()
+	            );
+	        }
+	    }]);
+	
+	    return SectionEntries;
+	}(_react.Component);
+	
+	exports.default = SectionEntries;
+
+/***/ },
+/* 208 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	
 	var _redux = __webpack_require__(167);
 	
-	var _parts_list_reducer = __webpack_require__(203);
+	var _parts_list_reducer = __webpack_require__(209);
 	
 	var _parts_list_reducer2 = _interopRequireDefault(_parts_list_reducer);
 	
@@ -21974,7 +22457,7 @@
 	exports.default = rootReducer;
 
 /***/ },
-/* 203 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21987,30 +22470,27 @@
 	  return partslist;
 	};
 	
-	var partslist = __webpack_require__(207)("./" + window.location.search.substring(1) + ".js");
+	var partslist = __webpack_require__(210)("./" + window.location.search.substring(1) + ".js");
 
 /***/ },
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./13d05df5.js": 219,
-		"./65416597.js": 208,
-		"./65576597.js": 209,
-		"./65596597.js": 221,
-		"./939259f5.js": 222,
-		"./93c75cf5.js": 223,
-		"./95116597.js": 224,
-		"./a26a65e6.js": 225,
-		"./c30258f5.js": 226,
-		"./d5466497.js": 227,
-		"./d5ab6497.js": 228,
-		"./d5b76497.js": 229,
-		"./d5b96497.js": 230,
-		"./pattern.js": 220
+		"./13d05df5.js": 211,
+		"./65416597.js": 212,
+		"./65576597.js": 213,
+		"./65596597.js": 214,
+		"./939259f5.js": 215,
+		"./93c75cf5.js": 216,
+		"./95116597.js": 217,
+		"./a26a65e6.js": 218,
+		"./c30258f5.js": 219,
+		"./d5466497.js": 220,
+		"./d5ab6497.js": 221,
+		"./d5b76497.js": 222,
+		"./d5b96497.js": 223,
+		"./pattern.js": 224
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -22023,11 +22503,52 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 207;
+	webpackContext.id = 210;
 
 
 /***/ },
-/* 208 */
+/* 211 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Adafruit Feather HUZZAH with ESP8266 WiFi",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Feather HUZZAH ESP8266 WiFi 4MB Flash 80MHz"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-nodemcu-lua?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Adafruit HUZZAH ESP8266 Breakout",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit HUZZAH ESP8266 WiFi Breakout"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/faq?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Adafruit CC3000 WiFi",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit CC3000 WiFi Breakout"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-cc3000-wifi/downloads?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}];
+	/*
+	13d05df5.html
+	*/
+
+/***/ },
+/* 212 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22186,7 +22707,7 @@
 	}];
 
 /***/ },
-/* 209 */
+/* 213 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22320,573 +22841,7 @@
 	}];
 
 /***/ },
-/* 210 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _link = __webpack_require__(215);
-	
-	var _link2 = _interopRequireDefault(_link);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0,
-	    id2 = 0;
-	
-	var PartHeader = function (_Component) {
-	    _inherits(PartHeader, _Component);
-	
-	    function PartHeader() {
-	        _classCallCheck(this, PartHeader);
-	
-	        return _possibleConstructorReturn(this, (PartHeader.__proto__ || Object.getPrototypeOf(PartHeader)).apply(this, arguments));
-	    }
-	
-	    _createClass(PartHeader, [{
-	        key: 'renderText',
-	        value: function renderText(desc) {
-	            var text = "";
-	            text = desc.value;
-	            if (text.length > 0) {
-	                return _react2.default.createElement(
-	                    'li',
-	                    { key: id2, className: 'part-header-description' },
-	                    text
-	                );
-	            } else {
-	                return "";
-	            }
-	        }
-	    }, {
-	        key: 'renderLink',
-	        value: function renderLink(desc) {
-	            return _react2.default.createElement(
-	                'li',
-	                { key: id2 },
-	                _react2.default.createElement(_link2.default, { link: desc })
-	            );
-	        }
-	    }, {
-	        key: 'renderDescription',
-	        value: function renderDescription() {
-	            var me = this;
-	            return this.props.part.description.map(function (descr) {
-	                id2++;
-	                if (descr.type === "text") {
-	                    return me.renderText(descr);
-	                } else if (descr.type === "link") {
-	                    return me.renderLink(descr);
-	                }
-	            });
-	        }
-	    }, {
-	        key: 'renderPartHeader',
-	        value: function renderPartHeader() {
-	            var name = this.props.part.name;
-	
-	            return _react2.default.createElement(
-	                'div',
-	                { key: id },
-	                _react2.default.createElement(
-	                    'h2',
-	                    { className: 'part-header' },
-	                    name
-	                ),
-	                _react2.default.createElement(
-	                    'ul',
-	                    { className: 'list-unstyled' },
-	                    this.renderDescription()
-	                )
-	            );
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            id++;
-	            return _react2.default.createElement(
-	                'div',
-	                { key: id },
-	                this.renderPartHeader()
-	            );
-	        }
-	    }]);
-	
-	    return PartHeader;
-	}(_react.Component);
-	
-	exports.default = PartHeader;
-
-/***/ },
-/* 211 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _partial_header = __webpack_require__(212);
-	
-	var _partial_header2 = _interopRequireDefault(_partial_header);
-	
-	var _section_list = __webpack_require__(218);
-	
-	var _section_list2 = _interopRequireDefault(_section_list);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
-	
-	var PartialList = function (_Component) {
-	    _inherits(PartialList, _Component);
-	
-	    function PartialList() {
-	        _classCallCheck(this, PartialList);
-	
-	        return _possibleConstructorReturn(this, (PartialList.__proto__ || Object.getPrototypeOf(PartialList)).apply(this, arguments));
-	    }
-	
-	    _createClass(PartialList, [{
-	        key: 'renderPartialList',
-	        value: function renderPartialList() {
-	            if (!this.props.part.partials) {
-	                return "";
-	            }
-	            return this.props.part.partials.map(function (partial) {
-	                id++;
-	                return _react2.default.createElement(
-	                    'li',
-	                    { key: id, className: 'partial-list-entry' },
-	                    _react2.default.createElement(_partial_header2.default, { partial: partial }),
-	                    _react2.default.createElement(_section_list2.default, { sections: partial.sections })
-	                );
-	            });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	
-	            return _react2.default.createElement(
-	                'ul',
-	                { className: 'list-unstyled partial-list' },
-	                this.renderPartialList()
-	            );
-	        }
-	    }]);
-	
-	    return PartialList;
-	}(_react.Component);
-	
-	exports.default = PartialList;
-	
-	/*
-	partials: [
-	    {
-	        name: "STM32F429ZIT6U",
-	        description: [
-	            {
-	                section: "Documentation",
-	                entries: [
-	                    {
-	                        type: 'link',
-	                        target: "http://www.st.com/en/microcontrollers/stm32f429zi.html",
-	                        value: "Product-Page"
-	                    },
-	                    {
-	                        type: 'link',
-	                        target: "http://www.st.com/content/ccc/resource/technical/document/user_manual/2f/71/ba/b8/75/54/47/cf/DM00105879.pdf/files/DM00105879.pdf/jcr:content/translations/en.DM00105879.pdf",
-	                        value: "UM1725 - STM32F4 User Manual: Description of STM32F4xx HAL drivers (PDF)"
-	                    }
-	                ]
-	            }
-	        ]
-	    }
-	]
-	*/
-
-/***/ },
-/* 212 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
-	
-	var PartialHeader = function (_Component) {
-	    _inherits(PartialHeader, _Component);
-	
-	    function PartialHeader() {
-	        _classCallCheck(this, PartialHeader);
-	
-	        return _possibleConstructorReturn(this, (PartialHeader.__proto__ || Object.getPrototypeOf(PartialHeader)).apply(this, arguments));
-	    }
-	
-	    _createClass(PartialHeader, [{
-	        key: "render",
-	        value: function render() {
-	            var partial = this.props.partial;
-	            return _react2.default.createElement(
-	                "div",
-	                { className: "partial" },
-	                _react2.default.createElement(
-	                    "h3",
-	                    { className: "partial-header" },
-	                    partial.type
-	                ),
-	                _react2.default.createElement(
-	                    "b",
-	                    null,
-	                    partial.name
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return PartialHeader;
-	}(_react.Component);
-	
-	exports.default = PartialHeader;
-
-/***/ },
-/* 213 */,
-/* 214 */,
-/* 215 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
-	
-	var Link = function (_Component) {
-	    _inherits(Link, _Component);
-	
-	    function Link() {
-	        _classCallCheck(this, Link);
-	
-	        return _possibleConstructorReturn(this, (Link.__proto__ || Object.getPrototypeOf(Link)).apply(this, arguments));
-	    }
-	
-	    _createClass(Link, [{
-	        key: "renderLink",
-	        value: function renderLink(entry) {
-	            var label = "";
-	            var href = "";
-	
-	            label = entry.value;
-	            href = entry.target;
-	            return _react2.default.createElement(
-	                "a",
-	                { className: "link", href: href },
-	                " == ",
-	                label,
-	                " == "
-	            );
-	        }
-	    }, {
-	        key: "render",
-	        value: function render() {
-	            return this.renderLink(this.props.link);
-	        }
-	    }]);
-	
-	    return Link;
-	}(_react.Component);
-	
-	exports.default = Link;
-
-/***/ },
-/* 216 */,
-/* 217 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _link = __webpack_require__(215);
-	
-	var _link2 = _interopRequireDefault(_link);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
-	
-	var SectionEntries = function (_Component) {
-	    _inherits(SectionEntries, _Component);
-	
-	    function SectionEntries() {
-	        _classCallCheck(this, SectionEntries);
-	
-	        return _possibleConstructorReturn(this, (SectionEntries.__proto__ || Object.getPrototypeOf(SectionEntries)).apply(this, arguments));
-	    }
-	
-	    _createClass(SectionEntries, [{
-	        key: 'renderSectionEntries',
-	        value: function renderSectionEntries() {
-	            var me = this;
-	            return this.props.entries.map(function (entry) {
-	                id++;
-	                return _react2.default.createElement(
-	                    'li',
-	                    { key: id, className: 'section-entry' },
-	                    _react2.default.createElement(_link2.default, { link: entry })
-	                );
-	            });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'ul',
-	                { className: 'list-unstyled section-entries' },
-	                this.renderSectionEntries()
-	            );
-	        }
-	    }]);
-	
-	    return SectionEntries;
-	}(_react.Component);
-	
-	exports.default = SectionEntries;
-
-/***/ },
-/* 218 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _section_entries = __webpack_require__(217);
-	
-	var _section_entries2 = _interopRequireDefault(_section_entries);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
-	
-	var SectionList = function (_Component) {
-	    _inherits(SectionList, _Component);
-	
-	    function SectionList() {
-	        _classCallCheck(this, SectionList);
-	
-	        return _possibleConstructorReturn(this, (SectionList.__proto__ || Object.getPrototypeOf(SectionList)).apply(this, arguments));
-	    }
-	
-	    _createClass(SectionList, [{
-	        key: 'renderSectionList',
-	        value: function renderSectionList() {
-	
-	            if (!this.props.sections) {
-	                return "";
-	            }
-	            return this.props.sections.map(function (section) {
-	                id++;
-	                return _react2.default.createElement(
-	                    'li',
-	                    { key: id, className: 'section' },
-	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
-	                        section.section
-	                    ),
-	                    _react2.default.createElement(_section_entries2.default, { entries: section.entries })
-	                );
-	            });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'ul',
-	                { className: 'list-unstyled section-list' },
-	                this.renderSectionList()
-	            );
-	        }
-	    }]);
-	
-	    return SectionList;
-	}(_react.Component);
-	
-	exports.default = SectionList;
-
-/***/ },
-/* 219 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Adafruit Feather HUZZAH with ESP8266 WiFi",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Feather HUZZAH ESP8266 WiFi 4MB Flash 80MHz"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-nodemcu-lua?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Adafruit HUZZAH ESP8266 Breakout",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit HUZZAH ESP8266 WiFi Breakout"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/faq?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Adafruit CC3000 WiFi",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit CC3000 WiFi Breakout"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-cc3000-wifi/downloads?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}];
-	/*
-	13d05df5.html
-	*/
-
-/***/ },
-/* 220 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "",
-	        value: ""
-	    }],
-	    sections: [{
-	        section: "",
-	        entries: [{
-	            type: "link",
-	            target: "",
-	            value: ""
-	        }]
-	    }],
-	    partials: [{
-	        type: "MicroController",
-	        name: "",
-	        sections: [{
-	            section: "",
-	            entries: [{
-	                type: "link",
-	                target: "",
-	                value: ""
-	            }]
-	        }]
-	    }]
-	
-	}];
-
-/***/ },
-/* 221 */
+/* 214 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22912,7 +22867,7 @@
 	 */
 
 /***/ },
-/* 222 */
+/* 215 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22963,7 +22918,7 @@
 	 */
 
 /***/ },
-/* 223 */
+/* 216 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23014,7 +22969,7 @@
 	 */
 
 /***/ },
-/* 224 */
+/* 217 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23044,15 +22999,35 @@
 	                value: "Datenblatt (PDF)"
 	            }]
 	        }]
+	    }, {
+	        type: "LoRa Tranceiver",
+	        name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
+	        sections: [{
+	            section: "Documentation",
+	            entries: [{
+	                type: "link",
+	                target: "http://cgi.ebay.de/ws/eBayISAPI.dll?ViewItem&item=171363005217#ht_585wt_1165",
+	                value: "Ebay/anarduino - Product Page"
+	            }, {
+	                type: "link",
+	                target: "http://www.hoperf.com/rf_transceiver/lora/RFM95W.html",
+	                value: "HopeRF - Product Page"
+	            }, {
+	                type: "link",
+	                target: "http://www.anarduino.com/docs/RFM95_96_97_98W.pdf",
+	                value: "Datasheet (PDF)"
+	            }]
+	        }]
 	    }]
 	
 	}];
 	/*
 	 95116597.html
+
 	 */
 
 /***/ },
-/* 225 */
+/* 218 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23073,7 +23048,7 @@
 	 */
 
 /***/ },
-/* 226 */
+/* 219 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23104,7 +23079,7 @@
 	 */
 
 /***/ },
-/* 227 */
+/* 220 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23126,7 +23101,7 @@
 	 */
 
 /***/ },
-/* 228 */
+/* 221 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23191,7 +23166,7 @@
 	 */
 
 /***/ },
-/* 229 */
+/* 222 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23232,7 +23207,7 @@
 	 */
 
 /***/ },
-/* 230 */
+/* 223 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23251,6 +23226,45 @@
 	/*
 	 d5b96497.html
 	 */
+
+/***/ },
+/* 224 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "",
+	    description: [{
+	        type: "text",
+	        value: ""
+	    }, {
+	        type: "link",
+	        target: "",
+	        value: ""
+	    }],
+	    sections: [{
+	        section: "",
+	        entries: [{
+	            type: "link",
+	            target: "",
+	            value: ""
+	        }]
+	    }],
+	    partials: [{
+	        type: "MicroController",
+	        name: "",
+	        sections: [{
+	            section: "",
+	            entries: [{
+	                type: "link",
+	                target: "",
+	                value: ""
+	            }]
+	        }]
+	    }]
+	
+	}];
 
 /***/ }
 /******/ ]);

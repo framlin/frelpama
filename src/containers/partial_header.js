@@ -9,7 +9,7 @@ class PartialHeader extends Component {
         return (
             <div className="partial">
                 <h3 className="partial-header">{partial.type}</h3>
-                <b>{partial.name}</b>
+                <div className="partial-header-name">{partial.name}</div>
             </div>
         )
     }

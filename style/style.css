@@ -5,20 +5,35 @@
     background-color: #4e3b31;
     color: white;
     padding: 7px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radiuss: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 .partial-list {
     border-bottom-style: dashed;
     border-bottom-color:crimson;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .partial-header {
     border-bottom-style:solid;
     border-bottom-width: thin;
     border-bottom-color: orange;
-    border-radius: 3px;
-    background-color: #f8e1c2;
+    border-right-style:solid;
+    border-right-width: thin;
+    border-right-color: orange;
+    border-top-style:solid;
+    border-top-width: thin;
+    border-top-color: white;
+    border-left-style:solid;
+    border-left-width: thin;
+    border-left-color: white;
+    border-radius: 5px;
+    background-color: rgba(233, 210, 179, 0.67);
     color: #752c03;
-    padding: 4px;
+    padding: 5px;
 }
 
 .part-header-description {
@@ -26,20 +41,34 @@
     border-bottom-width: thin;
     border-bottom-color: #752c03;
     margin-bottom: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    background-color: rgba(252, 175, 8, 0.18);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.partial {
-    /*margin-top: 20px;*/
+.partial-header-name {
+    padding-left: 10px;
+    font-weight: bold;
 }
 
 .partial-list-entry {
-    padding: 10px;
-    background-color: #fefff6;
+    padding: 7px;
+    background-color: rgba(215, 152, 25, 0.12);
+    padding-bottom: 20px;
+    /*border-radius: 5px;*/
+    /*margin-bottom: 5px;*/
 }
-/*.partial-list-entry:nth-child(odd) {*/
-    /*background-color: #fffce5;*/
-/*}*/
+
+.partial-list-entry:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.partial-list-entry:last-child{
+    margin-bottom: 0px;
+}
 
 .link, .link:visited {
     color: darkred;
