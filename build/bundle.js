@@ -21887,9 +21887,9 @@
 	
 	var _partial_list2 = _interopRequireDefault(_partial_list);
 	
-	var _part_section_list = __webpack_require__(216);
+	var _section_list = __webpack_require__(218);
 	
-	var _part_section_list2 = _interopRequireDefault(_part_section_list);
+	var _section_list2 = _interopRequireDefault(_section_list);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -21920,7 +21920,7 @@
 	                    'div',
 	                    { key: id, className: 'part' },
 	                    _react2.default.createElement(_part_header2.default, { part: part }),
-	                    _react2.default.createElement(_part_section_list2.default, { part: part }),
+	                    _react2.default.createElement(_section_list2.default, { sections: part.sections }),
 	                    _react2.default.createElement(_partial_list2.default, { part: part })
 	                );
 	            });
@@ -21997,8 +21997,20 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
+		"./13d05df5.js": 219,
 		"./65416597.js": 208,
-		"./65576597.js": 209
+		"./65576597.js": 209,
+		"./65596597.js": 221,
+		"./939259f5.js": 222,
+		"./93c75cf5.js": 223,
+		"./95116597.js": 224,
+		"./a26a65e6.js": 225,
+		"./c30258f5.js": 226,
+		"./d5466497.js": 227,
+		"./d5ab6497.js": 228,
+		"./d5b76497.js": 229,
+		"./d5b96497.js": 230,
+		"./pattern.js": 220
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -22240,14 +22252,18 @@
 	    description: [{
 	        type: "text",
 	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/overview",
-	        value: "Tutorial Overview (Adafruit)"
-	    }, {
-	        type: "link",
-	        target: "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
-	        value: "TPS61090 Datsheet (PDF)"
+	    }],
+	    sections: [{
+	        section: "Documentation",
+	        entries: [{
+	            type: "link",
+	            target: "https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/overview",
+	            value: "Tutorial Overview (Adafruit)"
+	        }, {
+	            type: "link",
+	            target: "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
+	            value: "TPS61090 Datsheet (PDF)"
+	        }]
 	    }]
 	}, {
 	    name: "ADS1115 - 16-Bit ADC - 4 Channel with Programmable Gain Amplifier",
@@ -22351,7 +22367,7 @@
 	            if (text.length > 0) {
 	                return _react2.default.createElement(
 	                    'li',
-	                    { key: id2 },
+	                    { key: id2, className: 'part-header-description' },
 	                    text
 	                );
 	            } else {
@@ -22437,9 +22453,9 @@
 	
 	var _partial_header2 = _interopRequireDefault(_partial_header);
 	
-	var _partial_section_list = __webpack_require__(213);
+	var _section_list = __webpack_require__(218);
 	
-	var _partial_section_list2 = _interopRequireDefault(_partial_section_list);
+	var _section_list2 = _interopRequireDefault(_section_list);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22472,7 +22488,7 @@
 	                    'li',
 	                    { key: id, className: 'partial-list-entry' },
 	                    _react2.default.createElement(_partial_header2.default, { partial: partial }),
-	                    _react2.default.createElement(_partial_section_list2.default, { partial: partial })
+	                    _react2.default.createElement(_section_list2.default, { sections: partial.sections })
 	                );
 	            });
 	        }
@@ -22562,7 +22578,7 @@
 	                { className: "partial" },
 	                _react2.default.createElement(
 	                    "h3",
-	                    null,
+	                    { className: "partial-header" },
 	                    partial.type
 	                ),
 	                _react2.default.createElement(
@@ -22580,146 +22596,8 @@
 	exports.default = PartialHeader;
 
 /***/ },
-/* 213 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _partial_section_entries = __webpack_require__(214);
-	
-	var _partial_section_entries2 = _interopRequireDefault(_partial_section_entries);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
-	
-	var PartialSectionList = function (_Component) {
-	    _inherits(PartialSectionList, _Component);
-	
-	    function PartialSectionList() {
-	        _classCallCheck(this, PartialSectionList);
-	
-	        return _possibleConstructorReturn(this, (PartialSectionList.__proto__ || Object.getPrototypeOf(PartialSectionList)).apply(this, arguments));
-	    }
-	
-	    _createClass(PartialSectionList, [{
-	        key: 'renderSectionList',
-	        value: function renderSectionList() {
-	            return this.props.partial.sections.map(function (section) {
-	                id++;
-	                return _react2.default.createElement(
-	                    'li',
-	                    { key: id },
-	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
-	                        section.section
-	                    ),
-	                    _react2.default.createElement(_partial_section_entries2.default, { entries: section.entries })
-	                );
-	            });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'ul',
-	                { className: 'list-unstyled partial-section-list' },
-	                this.renderSectionList()
-	            );
-	        }
-	    }]);
-	
-	    return PartialSectionList;
-	}(_react.Component);
-	
-	exports.default = PartialSectionList;
-
-/***/ },
-/* 214 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _link = __webpack_require__(215);
-	
-	var _link2 = _interopRequireDefault(_link);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
-	
-	var PartialSectionEntries = function (_Component) {
-	    _inherits(PartialSectionEntries, _Component);
-	
-	    function PartialSectionEntries() {
-	        _classCallCheck(this, PartialSectionEntries);
-	
-	        return _possibleConstructorReturn(this, (PartialSectionEntries.__proto__ || Object.getPrototypeOf(PartialSectionEntries)).apply(this, arguments));
-	    }
-	
-	    _createClass(PartialSectionEntries, [{
-	        key: 'renderSectionEntries',
-	        value: function renderSectionEntries() {
-	            var me = this;
-	            return this.props.entries.map(function (entry) {
-	                id++;
-	                return _react2.default.createElement(
-	                    'li',
-	                    { key: id },
-	                    _react2.default.createElement(_link2.default, { link: entry })
-	                );
-	            });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'ul',
-	                { className: 'list-unstyled' },
-	                this.renderSectionEntries()
-	            );
-	        }
-	    }]);
-	
-	    return PartialSectionEntries;
-	}(_react.Component);
-	
-	exports.default = PartialSectionEntries;
-
-/***/ },
+/* 213 */,
+/* 214 */,
 /* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -22783,7 +22661,8 @@
 	exports.default = Link;
 
 /***/ },
-/* 216 */
+/* 216 */,
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22798,9 +22677,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _partial_section_entries = __webpack_require__(214);
+	var _link = __webpack_require__(215);
 	
-	var _partial_section_entries2 = _interopRequireDefault(_partial_section_entries);
+	var _link2 = _interopRequireDefault(_link);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22812,32 +22691,25 @@
 	
 	var id = 0;
 	
-	var PartSectionList = function (_Component) {
-	    _inherits(PartSectionList, _Component);
+	var SectionEntries = function (_Component) {
+	    _inherits(SectionEntries, _Component);
 	
-	    function PartSectionList() {
-	        _classCallCheck(this, PartSectionList);
+	    function SectionEntries() {
+	        _classCallCheck(this, SectionEntries);
 	
-	        return _possibleConstructorReturn(this, (PartSectionList.__proto__ || Object.getPrototypeOf(PartSectionList)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (SectionEntries.__proto__ || Object.getPrototypeOf(SectionEntries)).apply(this, arguments));
 	    }
 	
-	    _createClass(PartSectionList, [{
-	        key: 'renderSectionList',
-	        value: function renderSectionList() {
-	            if (!this.props.part.sections) {
-	                return "";
-	            }
-	            return this.props.part.sections.map(function (section) {
+	    _createClass(SectionEntries, [{
+	        key: 'renderSectionEntries',
+	        value: function renderSectionEntries() {
+	            var me = this;
+	            return this.props.entries.map(function (entry) {
 	                id++;
 	                return _react2.default.createElement(
 	                    'li',
-	                    { key: id },
-	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
-	                        section.section
-	                    ),
-	                    _react2.default.createElement(_partial_section_entries2.default, { entries: section.entries })
+	                    { key: id, className: 'section-entry' },
+	                    _react2.default.createElement(_link2.default, { link: entry })
 	                );
 	            });
 	        }
@@ -22846,16 +22718,539 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'ul',
-	                { className: 'list-unstyled partial-section-list' },
+	                { className: 'list-unstyled section-entries' },
+	                this.renderSectionEntries()
+	            );
+	        }
+	    }]);
+	
+	    return SectionEntries;
+	}(_react.Component);
+	
+	exports.default = SectionEntries;
+
+/***/ },
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _section_entries = __webpack_require__(217);
+	
+	var _section_entries2 = _interopRequireDefault(_section_entries);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var SectionList = function (_Component) {
+	    _inherits(SectionList, _Component);
+	
+	    function SectionList() {
+	        _classCallCheck(this, SectionList);
+	
+	        return _possibleConstructorReturn(this, (SectionList.__proto__ || Object.getPrototypeOf(SectionList)).apply(this, arguments));
+	    }
+	
+	    _createClass(SectionList, [{
+	        key: 'renderSectionList',
+	        value: function renderSectionList() {
+	
+	            if (!this.props.sections) {
+	                return "";
+	            }
+	            return this.props.sections.map(function (section) {
+	                id++;
+	                return _react2.default.createElement(
+	                    'li',
+	                    { key: id, className: 'section' },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        section.section
+	                    ),
+	                    _react2.default.createElement(_section_entries2.default, { entries: section.entries })
+	                );
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'ul',
+	                { className: 'list-unstyled section-list' },
 	                this.renderSectionList()
 	            );
 	        }
 	    }]);
 	
-	    return PartSectionList;
+	    return SectionList;
 	}(_react.Component);
 	
-	exports.default = PartSectionList;
+	exports.default = SectionList;
+
+/***/ },
+/* 219 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Adafruit Feather HUZZAH with ESP8266 WiFi",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Feather HUZZAH ESP8266 WiFi 4MB Flash 80MHz"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-nodemcu-lua?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Adafruit HUZZAH ESP8266 Breakout",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit HUZZAH ESP8266 WiFi Breakout"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/faq?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Adafruit CC3000 WiFi",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit CC3000 WiFi Breakout"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-cc3000-wifi/downloads?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}];
+	/*
+	13d05df5.html
+	*/
+
+/***/ },
+/* 220 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "",
+	    description: [{
+	        type: "text",
+	        value: ""
+	    }, {
+	        type: "link",
+	        target: "",
+	        value: ""
+	    }],
+	    sections: [{
+	        section: "",
+	        entries: [{
+	            type: "link",
+	            target: "",
+	            value: ""
+	        }]
+	    }],
+	    partials: [{
+	        type: "MicroController",
+	        name: "",
+	        sections: [{
+	            section: "",
+	            entries: [{
+	                type: "link",
+	                target: "",
+	                value: ""
+	            }]
+	        }]
+	    }]
+	
+	}];
+
+/***/ },
+/* 221 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Electret Microphone Amplifier",
+	    description: [{
+	        type: "text",
+	        value: "MAX4466 with Adjustable Gain"
+	    }, {
+	        type: "link",
+	        target: "https://www.adafruit.com/products/1063",
+	        value: "Product-Page (Adafruit)"
+	    }, {
+	        type: "link",
+	        target: "https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
+	}];
+	
+	/*
+	 65596597.html
+	 */
+
+/***/ },
+/* 222 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Bluefruit LE Micro",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Bluefruit LE Micro - Bluetooth Low Energy + ATmega32u4 (Discontinued)"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/bluefruit-le-micro-atmega32u4-microcontroller-usb-bluetooth-le-in-one",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Adafruit Bluefruit LE Friend",
+	    description: [{
+	        type: "text",
+	        value: "Bluefruit LE Friend - Bluetooth Low Energy (BLE 4.0) - nRF51822"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/introducing-adafruit-ble-bluetooth-low-energy-friend/software-resources?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Adafruit Feather 32u4 Bluefruit LE ATmega32u4 8Mhz",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Feather 32u4 Bluefruit LE"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/overview?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Bluefruit LE - Bluetooth Low Energy (BLE 4.0) - nRF8001 Breakout",
+	    description: [{
+	        type: "text",
+	        value: "nRF8001 Bluefruit LE Breakout"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/getting-started-with-the-nrf8001-bluefruit-le-breakout/pinouts?view=all",
+	        value: "Adafruit Tutorial"
+	    }]
+	}];
+	/*
+	 939259f5.html
+	 */
+
+/***/ },
+/* 223 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Feather M0 RFM69HCW ATSAMD21G18",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Feather M0 Radio with RFM69 Packet Radio (433MHz)"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-feather-m0-radio-with-rfm69-packet-radio/overview",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Feather 32u4 RFM69HCW Atmega32u4",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Feather 32u4 Radio with RFM69 Packet Radio (433MHz)"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-feather-32u4-radio-with-rfm69hcw-module/overview",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Adafruit Radio FeatherWing - RFM69HCW",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Radio FeatherWing - RFM69HCW (433MHZ)"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/radio-featherwing",
+	        value: "Adafruit Tutorial"
+	    }]
+	}, {
+	    name: "Feather M0 RFM96 LoRa Radio ATSAMD21G18",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit Feather M0 RFM96 LoRa Radio (433 MHz)"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module",
+	        value: "Adafruit Tutorial"
+	    }]
+	}];
+	/*
+	 93c75cf5.html
+	 */
+
+/***/ },
+/* 224 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "LoRa OSHPark Feather Parts",
+	    description: [{
+	        type: "text",
+	        value: "LoRa FeatherWing Development Breakout"
+	    }, {
+	        type: "link",
+	        target: "http://syncchannel.blogspot.de/2016/02/lora-featherwing-development-breakout.html",
+	        value: "The Sync Channel Blog"
+	    }],
+	    partials: [{
+	        type: "Ceramic Capacitor",
+	        name: "Ceramic Capacitor 0603 0.1uF 16V",
+	        sections: [{
+	            section: "Documentation",
+	            entries: [{
+	                type: "link",
+	                target: "http://www.mouser.de/ProductDetail/Vishay/VJ0603Y104KXJAP/?qs=%2fha2pyFadujAlg9bQeFPZ7BD0yBCKWDfL4yyvw%252bmPvMNj5dHwUgufw%3d%3d",
+	                value: "Mouser Product-Page"
+	            }, {
+	                type: "link",
+	                target: "http://www.mouser.com/ds/2/427/vjcommercialseries-222796.pdf",
+	                value: "Datenblatt (PDF)"
+	            }]
+	        }]
+	    }]
+	
+	}];
+	/*
+	 95116597.html
+	 */
+
+/***/ },
+/* 225 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "NE555N",
+	    description: [{
+	        type: "text",
+	        value: "General-purpose single bipolar timers"
+	    }, {
+	        type: "link",
+	        target: "http://www.st.com/content/ccc/resource/technical/document/datasheet/ba/0a/d7/6e/7c/db/4e/12/CD00000479.pdf/files/CD00000479.pdf/jcr:content/translations/en.CD00000479.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
+	}];
+	/*
+	 a26a65e6.html
+	 */
+
+/***/ },
+/* 226 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "LM567CM",
+	    description: [{
+	        type: "text",
+	        value: "LM567x Tone Decoder"
+	    }, {
+	        type: "link",
+	        target: "http://www.ti.com/lit/ds/symlink/lm567.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "CD4050BE",
+	    description: [{
+	        type: "text",
+	        value: "CD4049UB and CD4050B CMOS Hex Inverting Buffer and Converter"
+	    }, {
+	        type: "link",
+	        target: "http://www.ti.com/lit/ds/symlink/cd4050b-mil.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
+	}];
+	/*
+	 c30258f5.html
+	 */
+
+/***/ },
+/* 227 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "LM35 Precision Centigrade Temperature Sensors",
+	    description: [{
+	        type: "text",
+	        value: "TI LM35 Precision Centigrade Temperature Sensors"
+	    }, {
+	        type: "link",
+	        target: "http://www.ti.com/lit/ds/symlink/lm35.pdf",
+	        value: "TI Datasheet (PDF)"
+	    }]
+	}];
+	
+	/*
+	 d5466497.html
+	 */
+
+/***/ },
+/* 228 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Digital Distance Sensor 5cm",
+	    description: [{
+	        type: "text",
+	        value: "Sharp GP2Y0D805Z0F Digital Distance Sensor 5cm"
+	    }, {
+	        type: "link",
+	        target: "https://www.pololu.com/product/1131",
+	        value: "Pololu Product Page"
+	    }]
+	}, {
+	    name: "Carrier for Sharp Sensors",
+	    description: [{
+	        type: "text",
+	        value: "Pololu Carrier for Sharp GP2Y0D815Z0F, GP2Y0D810Z0F, and GP2Y0D805Z0F Sensors"
+	    }, {
+	        type: "link",
+	        target: "https://www.pololu.com/product/1133",
+	        value: "Pololu Product Page"
+	    }]
+	}, {
+	    name: "Digital Distance Sensor 10cm",
+	    description: [{
+	        type: "text",
+	        value: "Pololu Carrier with Sharp GP2Y0D810Z0F Digital Distance Sensor 10"
+	    }, {
+	        type: "link",
+	        target: "https://www.pololu.com/product/1134",
+	        value: "Pololu Product Page"
+	    }]
+	}, {
+	    name: "Adjustable Step-Up/Step-Down Voltage Regulator",
+	    description: [{
+	        type: "text",
+	        value: "Pololu Adjustable Step-Up/Step-Down Voltage Regulator S7V8A"
+	    }, {
+	        type: "link",
+	        target: "https://www.pololu.com/product/2118",
+	        value: "Pololu Product Page"
+	    }]
+	}, {
+	    name: "38 kHz IR Proximity Sensor",
+	    description: [{
+	        type: "text",
+	        value: "Pololu 38 kHz IR Proximity Sensor, Fixed Gain, High Brightness (irs05a)"
+	    }, {
+	        type: "link",
+	        target: "https://www.pololu.com/product/2460",
+	        value: "Pololu Product Page"
+	    }, {
+	        type: "link",
+	        target: "https://www.pololu.com/file/download/pololu-38khz-ir-proximity-sensor-irs05a-schematic-diagram.pdf?file_id=0J614",
+	        value: "Schematic (PDF)"
+	    }]
+	}];
+	/*
+	 d5ab6497.html
+	 */
+
+/***/ },
+/* 229 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Digitaler Lichtsensor SEN10171P",
+	    description: [{
+	        type: "text",
+	        value: "Seeed Studio Digitaler Lichtsensor SEN10171P I2C Passend fuer Serie: C-Control Duino, Grove"
+	    }, {
+	        type: "link",
+	        target: "https://www.conrad.de/de/seeed-studio-digitaler-lichtsensor-sen10171p-ic-passend-fuer-serie-c-control-duino-grove-1369529.html",
+	        value: "Conrad Product Page"
+	    }]
+	}, {
+	    name: "1-wire Digital Thermometer DS18B20",
+	    description: [{
+	        type: "text",
+	        value: "Programmable Resolution 1-Wire Digital Thermometer"
+	    }, {
+	        type: "link",
+	        target: "http://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf",
+	        value: "Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "Adafruit 9-DOF IMU Breakout",
+	    description: [{
+	        type: "text",
+	        value: "Adafruit 9-DOF IMU Breakout - L3GD20H + LSM303"
+	    }, {
+	        type: "link",
+	        target: "https://learn.adafruit.com/adafruit-9-dof-imu-breakout",
+	        value: "Adafruit Tutorial"
+	    }]
+	}];
+	/*
+	 d5b76497.html
+	 */
+
+/***/ },
+/* 230 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Vibration Motor 11.6 x 4.6 x 4.8mm",
+	    description: [{
+	        type: "text",
+	        value: "Vibration Motor 11.6 x 4.6 x 4.8mm (Plololu #2265)"
+	    }, {
+	        type: "link",
+	        target: "https://www.pololu.com/product/2265",
+	        value: "Pololu Product Page"
+	    }]
+	}];
+	/*
+	 d5b96497.html
+	 */
 
 /***/ }
 /******/ ]);

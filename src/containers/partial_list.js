@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PartialHeader from './partial_header';
-import PartialSectionList from './partial_section_list';
+import SectionList from './section_list';
 
 var id = 0;
 
@@ -17,7 +17,7 @@ class PartialList extends Component {
             return (
                 <li key={id} className="partial-list-entry">
                     <PartialHeader partial={partial}/>
-                    <PartialSectionList partial={partial}/>
+                    <SectionList sections={partial.sections}/>
                 </li>
             )
         })

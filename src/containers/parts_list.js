@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import PartHeader from './part_header';
 import PartialList from './partial_list';
-import PartSectionList from './part_section_list';
+import SectionList from './section_list';
 
 let id = 0;
 
@@ -14,7 +14,7 @@ class PartsList extends Component {
             return (
                 <div key={id} className="part">
                     <PartHeader  part={part}/>
-                    <PartSectionList part={part}/>
+                    <SectionList sections={part.sections}/>
                     <PartialList  part={part}/>
                 </div>
             )

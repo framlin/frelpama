@@ -8,7 +8,7 @@ class PartialHeader extends Component {
         let partial = this.props.partial;
         return (
             <div className="partial">
-                <h3>{partial.type}</h3>
+                <h3 className="partial-header">{partial.type}</h3>
                 <b>{partial.name}</b>
             </div>
         )

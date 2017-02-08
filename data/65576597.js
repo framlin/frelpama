@@ -86,16 +86,24 @@ module.exports = [
             {
                 type: "text",
                 value: ""
-            },
+            }
+            ],
+        sections: [
             {
-                type: "link",
-                target: "https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/overview",
-                value: "Tutorial Overview (Adafruit)"
-            },
-            {
-                type: "link",
-                target: "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
-                value: "TPS61090 Datsheet (PDF)"
+                section: "Documentation",
+                entries: [
+                    {
+                        type: "link",
+                        target: "https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/overview",
+                        value: "Tutorial Overview (Adafruit)"
+                    },
+                    {
+                        type: "link",
+                        target: "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
+                        value: "TPS61090 Datsheet (PDF)"
+                    }
+
+                ]
             }
         ]
     },

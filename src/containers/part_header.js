@@ -11,7 +11,7 @@ class PartHeader extends Component {
         text = desc.value;
         if (text.length > 0) {
             return (
-                <li key={id2}>{text}</li>
+                <li key={id2} className="part-header-description">{text}</li>
             )
         } else {
             return "";
