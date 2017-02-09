@@ -22486,6 +22486,7 @@
 		"./939259f5.js": 215,
 		"./93c75cf5.js": 216,
 		"./95116597.js": 217,
+		"./95356597.js": 227,
 		"./a26a65e6.js": 218,
 		"./c30258f5.js": 219,
 		"./d5466497.js": 220,
@@ -23400,6 +23401,42 @@
 	        type: "link",
 	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23PHI.pdf",
 	        value: "Philips Datasheet (PDF)"
+	    }]
+	}];
+
+/***/ },
+/* 227 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "BCP 55 NPN Transistor",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: BCP 55-10 SMD / SMD NPN SOT-223 60V 1A 1,3W"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/DS_BCP55_BCX55_BC55PA-NXP.pdf",
+	        value: "NXP Datasheet"
+	    }]
+	}, {
+	    name: "BDP948 PNP Silicon AF Power Transistor",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: BDP 948 SMD / SMD PNP SOT-223 45V 3A 3W"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/BDP948_BDP950_BDP954-INF.pdf",
+	        value: "Infineon Datasheet"
 	    }]
 	}];
 
