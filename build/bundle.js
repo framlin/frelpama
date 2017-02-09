@@ -22478,6 +22478,7 @@
 
 	var map = {
 		"./13d05df5.js": 211,
+		"./653a6597.js": 225,
 		"./65416597.js": 212,
 		"./65576597.js": 213,
 		"./65596597.js": 214,
@@ -23000,6 +23001,17 @@
 	            }]
 	        }]
 	    }, {
+	        type: "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
+	        name: "Reichelt: X7R-G0603 1,0/16",
+	        sections: [{
+	            section: "Documentation",
+	            entries: [{
+	                type: "link",
+	                target: "https://www.reichelt.de/index.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
+	                value: "Reichelt Product-Page"
+	            }]
+	        }]
+	    }, {
 	        type: "LoRa Tranceiver",
 	        name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
 	        sections: [{
@@ -23033,14 +23045,34 @@
 	"use strict";
 	
 	module.exports = [{
-	    name: "NE555N",
+	    name: "ST NE555N",
 	    description: [{
 	        type: "text",
-	        value: "General-purpose single bipolar timers"
+	        value: "General-purpose single bipolar timers DIP-8"
 	    }, {
 	        type: "link",
 	        target: "http://www.st.com/content/ccc/resource/technical/document/datasheet/ba/0a/d7/6e/7c/db/4e/12/CD00000479.pdf/files/CD00000479.pdf/jcr:content/translations/en.CD00000479.pdf",
-	        value: "Datasheet (PDF)"
+	        value: "ST Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "ST NE555D",
+	    description: [{
+	        type: "text",
+	        value: "General-purpose single bipolar timers SO-8"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/NE555_SA555%23STM.pdf",
+	        value: "ST Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "TI LM555CM/NOBP",
+	    description: [{
+	        type: "text",
+	        value: "Linear IC Texas Instruments LM555CM/NOBP SO-8"
+	    }, {
+	        type: "link",
+	        target: "http://www.produktinfo.conrad.com/datenblaetter/150000-174999/152343-da-01-en-IC_LM_555_CM___NOBP_SO8__TID.pdf",
+	        value: "TI Datasheet (PDF)"
 	    }]
 	}];
 	/*
@@ -23264,6 +23296,70 @@
 	        }]
 	    }]
 	
+	}];
+
+/***/ },
+/* 225 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "MOSFET P-CH, 30V, 4A, SOT-23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: AO 3401A"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/index.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3401A_SPEC.pdf",
+	        value: "Alpha & Omega Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "MOSFET N-CH, 30V, 3,8A, SOT-23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: AO 3418"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3418_SPEC.pdf",
+	        value: "Alpha & Omega Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "MOSFET N-Ch 20V 4,9A 1,25W 0,033R SOT23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: TSM 2314 SMD"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2314-TSC.pdf",
+	        value: "TSC Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "MOSFET P-Ch 20V 3,3A 2W 0,07R SOT23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: TSM 2313 SMD"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2313-TSC.pdf",
+	        value: "TSC Datasheet (PDF)"
+	    }]
 	}];
 
 /***/ }

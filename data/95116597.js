@@ -35,6 +35,22 @@ module.exports = [
                 ]
             },
             {
+                type: "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
+                name: "Reichelt: X7R-G0603 1,0/16",
+                sections: [
+                    {
+                        section: "Documentation",
+                        entries: [
+                            {
+                                type: "link",
+                                target: "https://www.reichelt.de/index.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
+                                value: "Reichelt Product-Page"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 type: "LoRa Tranceiver",
                 name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
                 sections: [
