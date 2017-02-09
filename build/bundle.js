@@ -22478,6 +22478,7 @@
 
 	var map = {
 		"./13d05df5.js": 211,
+		"./65376597.js": 226,
 		"./653a6597.js": 225,
 		"./65416597.js": 212,
 		"./65576597.js": 213,
@@ -23359,6 +23360,46 @@
 	        type: "link",
 	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2313-TSC.pdf",
 	        value: "TSC Datasheet (PDF)"
+	    }]
+	}];
+
+/***/ },
+/* 226 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Dual general-purpose operational amplifier NE/SA/SE4558",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: NE 4558 D SMD / Op-Amp, SO-8"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18790;SEARCH=NE%204558",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/NE4558%23PHI.pdf",
+	        value: "Philips Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "Dual general-purpose operational amplifier MC1458",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: MC 1458 D SMD / Op-Amp, SO-8"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18774;SEARCH=MC%201458",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23TEX.pdf",
+	        value: "TI Datasheet (PDF)"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23PHI.pdf",
+	        value: "Philips Datasheet (PDF)"
 	    }]
 	}];
 
