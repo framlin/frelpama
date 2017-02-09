@@ -1,7 +1,4 @@
 .part-header {
-    /*background-color: antiquewhite;*/
-    /*border-bottom-style: solid;*/
-    /*border-bottom-color: coral;*/
     background-color: #4e3b31;
     color: white;
     padding: 7px;
@@ -19,20 +16,21 @@
 }
 .partial-header {
     border-bottom-style:solid;
-    border-bottom-width: thin;
-    border-bottom-color: orange;
+    border-bottom-width: thick;
+    border-bottom-color: white;
     border-right-style:solid;
-    border-right-width: thin;
-    border-right-color: orange;
+    border-right-width: thick;
+    border-right-color: white;
     border-top-style:solid;
-    border-top-width: thin;
+    border-top-width: thick;
     border-top-color: white;
     border-left-style:solid;
-    border-left-width: thin;
+    border-left-width: thick;
     border-left-color: white;
     border-radius: 5px;
     background-color: rgba(233, 210, 179, 0.67);
-    color: #752c03;
+    /*color: #752c03;*/
+    color: #247014;
     padding: 5px;
 }
 
@@ -56,8 +54,6 @@
     padding: 7px;
     background-color: rgba(215, 152, 25, 0.12);
     padding-bottom: 20px;
-    /*border-radius: 5px;*/
-    /*margin-bottom: 5px;*/
 }
 
 .partial-list-entry:first-child{
@@ -72,12 +68,21 @@
 
 .link, .link:visited {
     color: darkred;
+    padding-left: 10px;
+}
+
+.section-entry:first-child {
+    padding-top: 10px;
+}
+
+.section-entry:last-child {
+    padding-bottom: 10px;
 }
 
 .section {
     margin-top: 10px;
     margin-left: 10px;
-    color: blue;
+    color: #00009b;
 }
 .section-entry {
     background-color: white;
