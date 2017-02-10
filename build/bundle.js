@@ -22478,22 +22478,23 @@
 
 	var map = {
 		"./13d05df5.js": 211,
-		"./653a6597.js": 225,
-		"./653f6597.js": 228,
-		"./65416597.js": 212,
-		"./65576597.js": 213,
-		"./65596597.js": 214,
-		"./939259f5.js": 215,
-		"./93c75cf5.js": 216,
-		"./95116597.js": 217,
-		"./95356597.js": 227,
-		"./a26a65e6.js": 218,
-		"./c30258f5.js": 219,
-		"./d5466497.js": 220,
-		"./d5ab6497.js": 221,
-		"./d5b76497.js": 222,
-		"./d5b96497.js": 223,
-		"./pattern.js": 224
+		"./653a6597.js": 212,
+		"./653f6597.js": 213,
+		"./65416597.js": 214,
+		"./65576597.js": 215,
+		"./65596597.js": 216,
+		"./939259f5.js": 217,
+		"./93c75cf5.js": 218,
+		"./95116597.js": 219,
+		"./95336597.js": 220,
+		"./95356597.js": 221,
+		"./a26a65e6.js": 222,
+		"./c30258f5.js": 223,
+		"./d5466497.js": 224,
+		"./d5ab6497.js": 225,
+		"./d5b76497.js": 226,
+		"./d5b96497.js": 227,
+		"./pattern.js": 228
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -22552,6 +22553,110 @@
 
 /***/ },
 /* 212 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "MOSFET P-CH, 30V, 4A, SOT-23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: AO 3401A"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/index.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3401A_SPEC.pdf",
+	        value: "Alpha & Omega Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "MOSFET N-CH, 30V, 3,8A, SOT-23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: AO 3418"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3418_SPEC.pdf",
+	        value: "Alpha & Omega Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "MOSFET N-Ch 20V 4,9A 1,25W 0,033R SOT23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: TSM 2314 SMD"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2314-TSC.pdf",
+	        value: "TSC Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "MOSFET P-Ch 20V 3,3A 2W 0,07R SOT23",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: TSM 2313 SMD"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2313-TSC.pdf",
+	        value: "TSC Datasheet (PDF)"
+	    }]
+	}];
+
+/***/ },
+/* 213 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "Dual general-purpose operational amplifier NE/SA/SE4558",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: NE 4558 D SMD / Op-Amp, SO-8"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18790;SEARCH=NE%204558",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/NE4558%23PHI.pdf",
+	        value: "Philips Datasheet (PDF)"
+	    }]
+	}, {
+	    name: "Dual general-purpose operational amplifier MC1458",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: MC 1458 D SMD / Op-Amp, SO-8"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18774;SEARCH=MC%201458",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23TEX.pdf",
+	        value: "TI Datasheet (PDF)"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23PHI.pdf",
+	        value: "Philips Datasheet (PDF)"
+	    }]
+	}];
+
+/***/ },
+/* 214 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22710,7 +22815,7 @@
 	}];
 
 /***/ },
-/* 213 */
+/* 215 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22844,7 +22949,7 @@
 	}];
 
 /***/ },
-/* 214 */
+/* 216 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22870,7 +22975,7 @@
 	 */
 
 /***/ },
-/* 215 */
+/* 217 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22921,7 +23026,7 @@
 	 */
 
 /***/ },
-/* 216 */
+/* 218 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22972,7 +23077,7 @@
 	 */
 
 /***/ },
-/* 217 */
+/* 219 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23041,7 +23146,82 @@
 	 */
 
 /***/ },
-/* 218 */
+/* 220 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "",
+	    description: [{
+	        type: "text",
+	        value: ""
+	    }, {
+	        type: "link",
+	        target: "",
+	        value: ""
+	    }],
+	    sections: [{
+	        section: "",
+	        entries: [{
+	            type: "link",
+	            target: "",
+	            value: ""
+	        }]
+	    }],
+	    partials: [{
+	        type: "MicroController",
+	        name: "",
+	        sections: [{
+	            section: "",
+	            entries: [{
+	                type: "link",
+	                target: "",
+	                value: ""
+	            }]
+	        }]
+	    }]
+	
+	}];
+
+/***/ },
+/* 221 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+	    name: "BCP 55 NPN Transistor",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: BCP 55-10 SMD / SMD NPN SOT-223 60V 1A 1,3W"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/DS_BCP55_BCX55_BC55PA-NXP.pdf",
+	        value: "NXP Datasheet"
+	    }]
+	}, {
+	    name: "BDP948 PNP Silicon AF Power Transistor",
+	    description: [{
+	        type: "text",
+	        value: "Reichelt: BDP 948 SMD / SMD PNP SOT-223 45V 3A 3W"
+	    }, {
+	        type: "link",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
+	        value: "Reichelt Product Page"
+	    }, {
+	        type: "link",
+	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/BDP948_BDP950_BDP954-INF.pdf",
+	        value: "Infineon Datasheet"
+	    }]
+	}];
+
+/***/ },
+/* 222 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23082,7 +23262,7 @@
 	 */
 
 /***/ },
-/* 219 */
+/* 223 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23113,7 +23293,7 @@
 	 */
 
 /***/ },
-/* 220 */
+/* 224 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23135,7 +23315,7 @@
 	 */
 
 /***/ },
-/* 221 */
+/* 225 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23200,7 +23380,7 @@
 	 */
 
 /***/ },
-/* 222 */
+/* 226 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23241,7 +23421,7 @@
 	 */
 
 /***/ },
-/* 223 */
+/* 227 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23262,7 +23442,7 @@
 	 */
 
 /***/ },
-/* 224 */
+/* 228 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23298,147 +23478,6 @@
 	        }]
 	    }]
 	
-	}];
-
-/***/ },
-/* 225 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "MOSFET P-CH, 30V, 4A, SOT-23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: AO 3401A"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/index.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3401A_SPEC.pdf",
-	        value: "Alpha & Omega Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "MOSFET N-CH, 30V, 3,8A, SOT-23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: AO 3418"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3418_SPEC.pdf",
-	        value: "Alpha & Omega Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "MOSFET N-Ch 20V 4,9A 1,25W 0,033R SOT23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: TSM 2314 SMD"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2314-TSC.pdf",
-	        value: "TSC Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "MOSFET P-Ch 20V 3,3A 2W 0,07R SOT23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: TSM 2313 SMD"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2313-TSC.pdf",
-	        value: "TSC Datasheet (PDF)"
-	    }]
-	}];
-
-/***/ },
-/* 226 */,
-/* 227 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "BCP 55 NPN Transistor",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: BCP 55-10 SMD / SMD NPN SOT-223 60V 1A 1,3W"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/DS_BCP55_BCX55_BC55PA-NXP.pdf",
-	        value: "NXP Datasheet"
-	    }]
-	}, {
-	    name: "BDP948 PNP Silicon AF Power Transistor",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: BDP 948 SMD / SMD PNP SOT-223 45V 3A 3W"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/BDP948_BDP950_BDP954-INF.pdf",
-	        value: "Infineon Datasheet"
-	    }]
-	}];
-
-/***/ },
-/* 228 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Dual general-purpose operational amplifier NE/SA/SE4558",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: NE 4558 D SMD / Op-Amp, SO-8"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18790;SEARCH=NE%204558",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/NE4558%23PHI.pdf",
-	        value: "Philips Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "Dual general-purpose operational amplifier MC1458",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: MC 1458 D SMD / Op-Amp, SO-8"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18774;SEARCH=MC%201458",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23TEX.pdf",
-	        value: "TI Datasheet (PDF)"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23PHI.pdf",
-	        value: "Philips Datasheet (PDF)"
-	    }]
 	}];
 
 /***/ }
