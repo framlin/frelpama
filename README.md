@@ -1,2 +1,2 @@
 # frelstoma
-FRamlins ELectronics STOck MAnagement
+FRamlins ELectronics Parts MAnagement
