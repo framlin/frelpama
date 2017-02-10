@@ -1,9 +1,9 @@
 {
-  "name": "frelstoma",
+  "name": "frelpama",
   "version": "1.0.0",
-  "description": "FRamlin ELectronics STorage MAnager",
+  "description": "FRamlin ELectronics PArts MAnager",
   "main": "index.js",
-  "repository": "https://github.com/framlin/frelstoma.git",
+  "repository": "https://github.com/framlin/frelpama.git",
   "scripts": {
     "dev": "webpack --watch",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
