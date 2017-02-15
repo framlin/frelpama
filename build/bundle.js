@@ -23119,6 +23119,21 @@
 	            }]
 	        }]
 	    }, {
+	        type: "Tantalum Kondnsator 47uF 10V",
+	        name: "Mouser: 647-F951A476MTAAQ2 ",
+	        sections: [{
+	            section: "Documentation",
+	            entries: [{
+	                type: "link",
+	                target: "http://www.mouser.de/ProductDetail/AVX/F951A476MTAAQ2/?qs=%2fha2pyFaduh6UP5i8fH4Y5d3NVkee0fi6wxL7elzuA5dEMNPmlQJK50IVN8eTNot",
+	                value: "Mouser Product-Page"
+	            }, {
+	                type: "link",
+	                target: "http://www.mouser.com/ds/2/40/f95-776234.pdf",
+	                value: "AVX Datasheet"
+	            }]
+	        }]
+	    }, {
 	        type: "LoRa Tranceiver",
 	        name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
 	        sections: [{
