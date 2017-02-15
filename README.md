@@ -1,2 +1,2 @@
 # frelpama
-FRamlins ELectronics Parts MAnagement
+FRamlins ELectronics PArts MAnagement
