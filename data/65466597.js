@@ -1,6 +1,6 @@
 module.exports = [
     {
-        name: "NCP1117 Voltage Regulator",
+        name: "NCP1117 5V Voltage Regulator",
         description: [
             {
                 type: "text",
@@ -19,11 +19,11 @@ module.exports = [
         ]
     },
     {
-        name: "TPS71533 Low-Dropout (LDO) Voltage Regulator",
+        name: "TPS71533 3.3V Low-Dropout (LDO) Voltage Regulator",
         description: [
             {
                 type: "text",
-                value: "50-mA, 24-V, 3.2-μA Supply Current Low-Dropout Linear Regulator in SC70 package"
+                value: "TPS71533 3.3V - 50-mA, 24-V, 3.2-μA Supply Current Low-Dropout Linear Regulator in SC70 package"
             },
             {
                 type: "link",

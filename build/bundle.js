@@ -22822,7 +22822,7 @@
 	"use strict";
 	
 	module.exports = [{
-	    name: "NCP1117 Voltage Regulator",
+	    name: "NCP1117 5V Voltage Regulator",
 	    description: [{
 	        type: "text",
 	        value: "NCP1117 5V - 1.0 A Low-Dropout Positive Fixed and Adjustable Voltage Regulators"
@@ -22836,10 +22836,10 @@
 	        value: "onsemi Datasheet (PDF)"
 	    }]
 	}, {
-	    name: "TPS71533 Low-Dropout (LDO) Voltage Regulator",
+	    name: "TPS71533 3.3V Low-Dropout (LDO) Voltage Regulator",
 	    description: [{
 	        type: "text",
-	        value: "50-mA, 24-V, 3.2-μA Supply Current Low-Dropout Linear Regulator in SC70 package"
+	        value: "TPS71533 3.3V - 50-mA, 24-V, 3.2-μA Supply Current Low-Dropout Linear Regulator in SC70 package"
 	    }, {
 	        type: "link",
 	        target: "https://www.ehajo.de/bauelemente/aktiv/spannungsversorgung/tps71533.html?search=100.024&description=true",
