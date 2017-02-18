@@ -22822,7 +22822,7 @@
 	"use strict";
 	
 	module.exports = [{
-	    name: "",
+	    name: "NCP1117 Voltage Regulator",
 	    description: [{
 	        type: "text",
 	        value: "NCP1117 5V - 1.0 A Low-Dropout Positive Fixed and Adjustable Voltage Regulators"
@@ -22836,7 +22836,7 @@
 	        value: "onsemi Datasheet (PDF)"
 	    }]
 	}, {
-	    name: "",
+	    name: "TPS71533 Low-Dropout (LDO) Voltage Regulator",
 	    description: [{
 	        type: "text",
 	        value: "50-mA, 24-V, 3.2-μA Supply Current Low-Dropout Linear Regulator in SC70 package"
@@ -22850,7 +22850,7 @@
 	        value: "TI Datasheet (PDF)"
 	    }]
 	}, {
-	    name: "",
+	    name: "WS2812B Neopixel",
 	    description: [{
 	        type: "text",
 	        value: "WS2812B - Intelligent control LED integrated light source"

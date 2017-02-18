@@ -1,6 +1,6 @@
 module.exports = [
     {
-        name: "",
+        name: "NCP1117 Voltage Regulator",
         description: [
             {
                 type: "text",
@@ -19,7 +19,7 @@ module.exports = [
         ]
     },
     {
-        name: "",
+        name: "TPS71533 Low-Dropout (LDO) Voltage Regulator",
         description: [
             {
                 type: "text",
@@ -38,7 +38,7 @@ module.exports = [
         ]
     },
     {
-        name: "",
+        name: "WS2812B Neopixel",
         description: [
             {
                 type: "text",
