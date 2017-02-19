@@ -14,7 +14,7 @@ module.exports = [
         ],
         partials: [
             {
-                type: "Ceramic Capacitor",
+                partial: "Ceramic Capacitor",
                 name: "Ceramic Capacitor 0603 0.1uF 16V",
                 sections: [
                     {
@@ -35,7 +35,7 @@ module.exports = [
                 ]
             },
             {
-                type: "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
+                partial: "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
                 name: "Reichelt: X7R-G0603 1,0/16",
                 sections: [
                     {
@@ -43,7 +43,7 @@ module.exports = [
                         entries: [
                             {
                                 type: "link",
-                                target: "https://www.reichelt.de/index.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
+                                target: "https://www.reichelt.de/partsIndex.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
                                 value: "Reichelt Product-Page"
                             }
                         ]
@@ -51,7 +51,7 @@ module.exports = [
                 ]
             },
             {
-                type: "Tantalum Kondnsator 47uF 10V",
+                partial: "Tantalum Kondnsator 47uF 10V",
                 name: "Mouser: 647-F951A476MTAAQ2 ",
                 sections: [
                     {
@@ -72,7 +72,7 @@ module.exports = [
                 ]
             },
             {
-                type: "LoRa Tranceiver",
+                partial: "LoRa Tranceiver",
                 name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
                 sections: [
                     {

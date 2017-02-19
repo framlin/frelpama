@@ -177,7 +177,8 @@ module.exports = [
                 value: "Datasheet (PDF)"
             }
         ]
-    }
+    },
+    {rfid: '65576597'}
 
 ];
 

@@ -21891,6 +21891,10 @@
 	
 	var _section_list2 = _interopRequireDefault(_section_list);
 	
+	var _rfid = __webpack_require__(230);
+	
+	var _rfid2 = _interopRequireDefault(_rfid);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21916,13 +21920,17 @@
 	
 	            return this.props.parts.map(function (part) {
 	                id++;
-	                return _react2.default.createElement(
-	                    'div',
-	                    { key: id, className: 'part' },
-	                    _react2.default.createElement(_part_header2.default, { part: part }),
-	                    _react2.default.createElement(_section_list2.default, { sections: part.sections }),
-	                    _react2.default.createElement(_partial_list2.default, { part: part })
-	                );
+	                if (part.rfid) {
+	                    return _react2.default.createElement(_rfid2.default, { key: id, rfid: part.rfid });
+	                } else {
+	                    return _react2.default.createElement(
+	                        'div',
+	                        { key: id, className: 'part' },
+	                        _react2.default.createElement(_part_header2.default, { part: part }),
+	                        _react2.default.createElement(_section_list2.default, { sections: part.sections }),
+	                        _react2.default.createElement(_partial_list2.default, { part: part })
+	                    );
+	                }
 	            });
 	        }
 	    }, {
@@ -22272,7 +22280,7 @@
 	                _react2.default.createElement(
 	                    "h3",
 	                    { className: "partial-header" },
-	                    partial.type
+	                    partial.partial
 	                ),
 	                _react2.default.createElement(
 	                    "div",
@@ -22565,7 +22573,7 @@
 	        value: "Reichelt: AO 3401A"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/index.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
+	        target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/partsIndex.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -22579,7 +22587,7 @@
 	        value: "Reichelt: AO 3418"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
+	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -22593,7 +22601,7 @@
 	        value: "Reichelt: TSM 2314 SMD"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
+	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -22607,7 +22615,7 @@
 	        value: "Reichelt: TSM 2313 SMD"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -22629,7 +22637,7 @@
 	        value: "Reichelt: NE 4558 D SMD / Op-Amp, SO-8"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18790;SEARCH=NE%204558",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18790;SEARCH=NE%204558",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -22643,7 +22651,7 @@
 	        value: "Reichelt: MC 1458 D SMD / Op-Amp, SO-8"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18774;SEARCH=MC%201458",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18774;SEARCH=MC%201458",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -22673,7 +22681,7 @@
 	        value: "ST Product-Page"
 	    }],
 	    partials: [{
-	        type: "MicroController",
+	        partial: "MicroController",
 	        name: "STM32F429ZIT6U",
 	        sections: [{
 	            section: "Documentation",
@@ -22707,7 +22715,7 @@
 	            }]
 	        }]
 	    }, {
-	        type: "Display",
+	        partial: "Display",
 	        name: '2.4" QVGA TFT LCD - Saef Technology Limited, MODULE NO SF-TC240T-9370A-T',
 	        sections: [{
 	            section: "Documentation",
@@ -22725,7 +22733,7 @@
 	            }]
 	        }]
 	    }, {
-	        type: "TFT Controller",
+	        partial: "TFT Controller",
 	        name: 'ILI9341',
 	        sections: [{
 	            section: "Documentation",
@@ -22743,7 +22751,7 @@
 	            }]
 	        }]
 	    }, {
-	        type: "Touch Controller",
+	        partial: "Touch Controller",
 	        name: 'STMPE811',
 	        sections: [{
 	            section: "Documentation",
@@ -22772,7 +22780,7 @@
 	        value: "ST Product-Page"
 	    }],
 	    partials: [{
-	        type: "MicroController",
+	        partial: "MicroController",
 	        name: 'STM32F411RE',
 	        sections: [{
 	            section: "User Manuals",
@@ -22798,7 +22806,7 @@
 	        value: "ST Product-Page"
 	    }],
 	    partials: [{
-	        type: "MicroController",
+	        partial: "MicroController",
 	        name: 'STM32F401RE',
 	        sections: [{
 	            section: "User Manuals",
@@ -22813,7 +22821,7 @@
 	            }]
 	        }]
 	    }]
-	}];
+	}, { rfid: '65416597' }];
 
 /***/ },
 /* 215 */
@@ -23001,7 +23009,7 @@
 	        target: "https://datasheets.maximintegrated.com/en/ds/DS2413.pdf",
 	        value: "Datasheet (PDF)"
 	    }]
-	}];
+	}, { rfid: '65576597' }];
 
 /***/ },
 /* 217 */
@@ -23148,7 +23156,7 @@
 	        value: "The Sync Channel Blog"
 	    }],
 	    partials: [{
-	        type: "Ceramic Capacitor",
+	        partial: "Ceramic Capacitor",
 	        name: "Ceramic Capacitor 0603 0.1uF 16V",
 	        sections: [{
 	            section: "Documentation",
@@ -23163,18 +23171,18 @@
 	            }]
 	        }]
 	    }, {
-	        type: "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
+	        partial: "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
 	        name: "Reichelt: X7R-G0603 1,0/16",
 	        sections: [{
 	            section: "Documentation",
 	            entries: [{
 	                type: "link",
-	                target: "https://www.reichelt.de/index.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
+	                target: "https://www.reichelt.de/partsIndex.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
 	                value: "Reichelt Product-Page"
 	            }]
 	        }]
 	    }, {
-	        type: "Tantalum Kondnsator 47uF 10V",
+	        partial: "Tantalum Kondnsator 47uF 10V",
 	        name: "Mouser: 647-F951A476MTAAQ2 ",
 	        sections: [{
 	            section: "Documentation",
@@ -23189,7 +23197,7 @@
 	            }]
 	        }]
 	    }, {
-	        type: "LoRa Tranceiver",
+	        partial: "LoRa Tranceiver",
 	        name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
 	        sections: [{
 	            section: "Documentation",
@@ -23228,7 +23236,7 @@
 	        value: "Reichelt: LM 358 LOW POWER DUAL OPERATIONAL AMPLIFIERS, SMD, 2-fach, SO-8"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18716;SEARCH=LM%20358%20",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18716;SEARCH=LM%20358%20",
 	        value: "Reichelt Product page"
 	    }, {
 	        type: "link",
@@ -23282,7 +23290,7 @@
 	        value: "Reichelt: BCP 55-10 SMD / SMD NPN SOT-223 60V 1A 1,3W"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -23296,7 +23304,7 @@
 	        value: "Reichelt: BDP 948 SMD / SMD PNP SOT-223 45V 3A 3W"
 	    }, {
 	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
+	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
 	        value: "Reichelt Product Page"
 	    }, {
 	        type: "link",
@@ -23551,7 +23559,7 @@
 	        }]
 	    }],
 	    partials: [{
-	        type: "MicroController",
+	        partial: "MicroController",
 	        name: "",
 	        sections: [{
 	            section: "",
@@ -23564,6 +23572,63 @@
 	    }]
 	
 	}];
+
+/***/ },
+/* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var id = 0;
+	
+	var Rfid = function (_Component) {
+	    _inherits(Rfid, _Component);
+	
+	    function Rfid() {
+	        _classCallCheck(this, Rfid);
+	
+	        return _possibleConstructorReturn(this, (Rfid.__proto__ || Object.getPrototypeOf(Rfid)).apply(this, arguments));
+	    }
+	
+	    _createClass(Rfid, [{
+	        key: "renderRfid",
+	        value: function renderRfid(rfid) {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "rfid" },
+	                "RfID: ",
+	                rfid
+	            );
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            return this.renderRfid(this.props.rfid);
+	        }
+	    }]);
+	
+	    return Rfid;
+	}(_react.Component);
+	
+	exports.default = Rfid;
 
 /***/ }
 /******/ ]);

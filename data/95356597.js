@@ -8,7 +8,7 @@ module.exports = [
             },
             {
                 type: "link",
-                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
+                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
                 value: "Reichelt Product Page"
             },
             {
@@ -27,7 +27,7 @@ module.exports = [
             },
             {
                 type: "link",
-                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
+                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
                 value: "Reichelt Product Page"
             },
             {

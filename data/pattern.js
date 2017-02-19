@@ -26,7 +26,7 @@ module.exports = [
         ],
         partials: [
             {
-                type: "MicroController",
+                partial: "MicroController",
                 name: "",
                 sections: [
                     {

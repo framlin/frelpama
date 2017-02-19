@@ -8,7 +8,7 @@ module.exports = [
             },
             {
                 type: "link",
-                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3;ARTICLE=18716;SEARCH=LM%20358%20",
+                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18716;SEARCH=LM%20358%20",
                 value: "Reichelt Product page"
             },
             {

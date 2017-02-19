@@ -8,7 +8,7 @@ module.exports = [
             },
             {
                 type: "link",
-                target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/index.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
+                target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/partsIndex.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
                 value: "Reichelt Product Page"
             }
             ,
@@ -28,7 +28,7 @@ module.exports = [
             },
             {
                 type: "link",
-                target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
+                target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
                 value: "Reichelt Product Page"
             }
             ,
@@ -48,7 +48,7 @@ module.exports = [
             },
             {
                 type: "link",
-                target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/index.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
+                target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
                 value: "Reichelt Product Page"
             }
             ,
@@ -68,7 +68,7 @@ module.exports = [
             },
             {
                 type: "link",
-                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/index.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
+                target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
                 value: "Reichelt Product Page"
             }
             ,

@@ -14,7 +14,7 @@ module.exports =  [
         ],
         partials: [
             {
-                type: "MicroController",
+                partial: "MicroController",
                 name: "STM32F429ZIT6U",
                 sections: [
                     {
@@ -61,7 +61,7 @@ module.exports =  [
                 ]
             },
             {
-                type: "Display",
+                partial: "Display",
                 name: '2.4" QVGA TFT LCD - Saef Technology Limited, MODULE NO SF-TC240T-9370A-T',
                 sections: [
                     {
@@ -86,7 +86,7 @@ module.exports =  [
                 ]
             },
             {
-                type: "TFT Controller",
+                partial: "TFT Controller",
                 name: 'ILI9341',
                 sections: [
                     {
@@ -111,7 +111,7 @@ module.exports =  [
                 ]
             },
             {
-                type: "Touch Controller",
+                partial: "Touch Controller",
                 name: 'STMPE811',
                 sections: [
                     {
@@ -152,7 +152,7 @@ module.exports =  [
         ],
         partials: [
             {
-                type: "MicroController",
+                partial: "MicroController",
                 name: 'STM32F411RE',
                 sections: [
                     {
@@ -189,7 +189,7 @@ module.exports =  [
         ],
         partials: [
             {
-                type: "MicroController",
+                partial: "MicroController",
                 name: 'STM32F401RE',
                 sections: [
                     {
@@ -210,5 +210,6 @@ module.exports =  [
                 ]
             }
         ]
-    }
+    },
+    {rfid: '65416597'}
 ];

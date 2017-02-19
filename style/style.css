@@ -4,7 +4,6 @@
     padding: 7px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom-left-radiuss: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
 }
@@ -86,4 +85,8 @@
 }
 .section-entry {
     background-color: white;
+}
+
+.rfid {
+    border-top-style: solid;
 }
