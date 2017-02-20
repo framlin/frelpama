@@ -10,4 +10,4 @@ Search.prototype.find = function find(word) {
 module.exports.Search = new Search();
 
 
-console.log(module.exports.Search.find("TI"));
+console.log(module.exports.Search.find("breulel"));

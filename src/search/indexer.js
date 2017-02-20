@@ -339,9 +339,13 @@ function Indexer() {}
 Indexer.prototype.indexData = function indexData() {
     fs.readdirSync(DATA_DIR).forEach(file => {
         if (file !== "pattern.js") {
-            let partsList = require(DATA_DIR + "/" + file);
             let rfid = file.split('.')[0];
-            partsIndex = indexTokenList(tokenizeParts(partsList, rfid), partsIndex);
+            let ext = file.split('.')[1];
+            if (ext === 'json') {
+                let partsList = require(DATA_DIR + "/" + file);
+                partsIndex = indexTokenList(tokenizeParts(partsList, rfid), partsIndex);
+            }
+
         }
     });
 
@@ -367,4 +371,4 @@ Indexer.prototype.getPartIndex = function getPartIndex() {
 
 module.exports.Indexer = new Indexer();
 
-
+module.exports.Indexer.indexData()

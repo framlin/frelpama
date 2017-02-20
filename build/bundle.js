@@ -69,7 +69,7 @@
 	
 	var _app2 = _interopRequireDefault(_app);
 	
-	var _reducers = __webpack_require__(208);
+	var _reducers = __webpack_require__(209);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
@@ -21891,7 +21891,7 @@
 	
 	var _section_list2 = _interopRequireDefault(_section_list);
 	
-	var _rfid = __webpack_require__(230);
+	var _rfid = __webpack_require__(208);
 	
 	var _rfid2 = _interopRequireDefault(_rfid);
 	
@@ -22259,8 +22259,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var id = 0;
-	
 	var PartialHeader = function (_Component) {
 	    _inherits(PartialHeader, _Component);
 	
@@ -22444,1139 +22442,6 @@
 /* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _redux = __webpack_require__(167);
-	
-	var _parts_list_reducer = __webpack_require__(209);
-	
-	var _parts_list_reducer2 = _interopRequireDefault(_parts_list_reducer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var rootReducer = (0, _redux.combineReducers)({
-	  parts: _parts_list_reducer2.default
-	});
-	
-	exports.default = rootReducer;
-
-/***/ },
-/* 209 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	exports.default = function () {
-	  return partslist;
-	};
-	
-	var partslist = __webpack_require__(210)("./" + window.location.search.substring(1) + ".js");
-
-/***/ },
-/* 210 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var map = {
-		"./13d05df5.js": 211,
-		"./653a6597.js": 212,
-		"./653f6597.js": 213,
-		"./65416597.js": 214,
-		"./65466597.js": 215,
-		"./65576597.js": 216,
-		"./65596597.js": 217,
-		"./939259f5.js": 218,
-		"./93c75cf5.js": 219,
-		"./95116597.js": 220,
-		"./95336597.js": 221,
-		"./95356597.js": 222,
-		"./a26a65e6.js": 223,
-		"./c30258f5.js": 224,
-		"./d5466497.js": 225,
-		"./d5ab6497.js": 226,
-		"./d5b76497.js": 227,
-		"./d5b96497.js": 228,
-		"./pattern.js": 229
-	};
-	function webpackContext(req) {
-		return __webpack_require__(webpackContextResolve(req));
-	};
-	function webpackContextResolve(req) {
-		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
-	};
-	webpackContext.keys = function webpackContextKeys() {
-		return Object.keys(map);
-	};
-	webpackContext.resolve = webpackContextResolve;
-	module.exports = webpackContext;
-	webpackContext.id = 210;
-
-
-/***/ },
-/* 211 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Adafruit Feather HUZZAH with ESP8266 WiFi",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Feather HUZZAH ESP8266 WiFi 4MB Flash 80MHz"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-nodemcu-lua?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Adafruit HUZZAH ESP8266 Breakout",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit HUZZAH ESP8266 WiFi Breakout"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/faq?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Adafruit CC3000 WiFi",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit CC3000 WiFi Breakout"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-cc3000-wifi/downloads?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}];
-	/*
-	13d05df5.html
-	*/
-
-/***/ },
-/* 212 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "MOSFET P-CH, 30V, 4A, SOT-23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: AO 3401A"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/partsIndex.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3401A_SPEC.pdf",
-	        value: "Alpha & Omega Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "MOSFET N-CH, 30V, 3,8A, SOT-23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: AO 3418"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/AO3418_SPEC.pdf",
-	        value: "Alpha & Omega Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "MOSFET N-Ch 20V 4,9A 1,25W 0,033R SOT23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: TSM 2314 SMD"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2314-TSC.pdf",
-	        value: "TSC Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "MOSFET P-Ch 20V 3,3A 2W 0,07R SOT23",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: TSM 2313 SMD"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2313-TSC.pdf",
-	        value: "TSC Datasheet (PDF)"
-	    }]
-	}];
-
-/***/ },
-/* 213 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Dual general-purpose operational amplifier NE/SA/SE4558",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: NE 4558 D SMD / Op-Amp, SO-8"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18790;SEARCH=NE%204558",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/NE4558%23PHI.pdf",
-	        value: "Philips Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "Dual general-purpose operational amplifier MC1458",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: MC 1458 D SMD / Op-Amp, SO-8"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18774;SEARCH=MC%201458",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23TEX.pdf",
-	        value: "TI Datasheet (PDF)"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23PHI.pdf",
-	        value: "Philips Datasheet (PDF)"
-	    }]
-	}];
-
-/***/ },
-/* 214 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "STM32F429-Discovery (STM32F429I-DISC1)",
-	    description: [{
-	        type: "text",
-	        value: "STM32 Discovery-Board von ST"
-	    }, {
-	        type: "link",
-	        target: "http://www.st.com/en/evaluation-tools/32f429idiscovery.html",
-	        value: "ST Product-Page"
-	    }],
-	    partials: [{
-	        partial: "MicroController",
-	        name: "STM32F429ZIT6U",
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: 'link',
-	                target: "http://www.st.com/en/microcontrollers/stm32f429zi.html",
-	                value: "Product-Page"
-	            }, {
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/user_manual/2f/71/ba/b8/75/54/47/cf/DM00105879.pdf/files/DM00105879.pdf/jcr:content/translations/en.DM00105879.pdf",
-	                value: "UM1725 - STM32F4 User Manual: Description of STM32F4xx HAL drivers (PDF)"
-	            }, {
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/datasheet/03/b4/b2/36/4c/72/49/29/DM00071990.pdf/files/DM00071990.pdf/jcr:content/translations/en.DM00071990.pdf",
-	                value: "DS9405 - Product Specification (PDF)"
-	            }, {
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/reference_manual/3d/6d/5a/66/b4/99/40/d4/DM00031020.pdf/files/DM00031020.pdf/jcr:content/translations/en.DM00031020.pdf",
-	                value: "RM0090 - Reference Manual (PDF)"
-	            }, {
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/programming_manual/6c/3a/cb/e7/e4/ea/44/9b/DM00046982.pdf/files/DM00046982.pdf/jcr:content/translations/en.DM00046982.pdf",
-	                value: "PM0214  - Programming Manual (PDF)"
-	            }]
-	        }, {
-	            section: "Libraries",
-	            entries: [{
-	                type: 'link',
-	                target: "http://mikrocontroller.bplaced.net/wordpress/?page_id=2736",
-	                value: "Blog: Komplette-Library-Liste (STM32F429)"
-	            }]
-	        }]
-	    }, {
-	        partial: "Display",
-	        name: '2.4" QVGA TFT LCD - Saef Technology Limited, MODULE NO SF-TC240T-9370A-T',
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: 'link',
-	                target: "http://galaxy.agh.edu.pl/~amrozek/TM/SF_TC240T_9370A_T.pdf",
-	                value: "Spezification (PDF)"
-	            }]
-	        }, {
-	            section: "Libraries",
-	            entries: [{
-	                type: 'link',
-	                target: "http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-3rd-party-embedded-software/dra-touchgfx.html",
-	                value: "TARA-Embd-Wizard"
-	            }]
-	        }]
-	    }, {
-	        partial: "TFT Controller",
-	        name: 'ILI9341',
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: 'link',
-	                target: "https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf",
-	                value: "Datasheet (Adafruit)"
-	            }]
-	        }, {
-	            section: "Libraries",
-	            entries: [{
-	                type: 'link',
-	                target: "hhttp://mikrocontroller.bplaced.net/wordpress/?page_id=2753",
-	                value: "Blog: 07 -L CD ILI9341 - Library (STM32F429)"
-	            }]
-	        }]
-	    }, {
-	        partial: "Touch Controller",
-	        name: 'STMPE811',
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/datasheet/d3/4a/58/38/4f/fa/46/2d/CD00186725.pdf/files/CD00186725.pdf/jcr:content/translations/en.CD00186725.pdf",
-	                value: "ST - Datasheet (PDF)"
-	            }]
-	        }, {
-	            section: "Libraries",
-	            entries: [{
-	                type: 'link',
-	                target: "http://mikrocontroller.bplaced.net/wordpress/?page_id=2877",
-	                value: "Blog: 15 - Touch STMPE811 - Library (STM32F429)"
-	            }]
-	        }]
-	    }]
-	}, {
-	    name: "ST NUCLEO-F411RE",
-	    description: [{
-	        type: "text",
-	        value: "STM32 F4 Nucleo-Board von ST"
-	    }, {
-	        type: "link",
-	        target: "http://www.st.com/en/evaluation-tools/nucleo-f411re.html",
-	        value: "ST Product-Page"
-	    }],
-	    partials: [{
-	        partial: "MicroController",
-	        name: 'STM32F411RE',
-	        sections: [{
-	            section: "User Manuals",
-	            entries: [{
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/user_manual/98/2e/fa/4b/e0/82/43/b7/DM00105823.pdf/files/DM00105823.pdf/jcr:content/translations/en.DM00105823.pdf",
-	                value: "UM1724 User manual: STM32 Nucleo-64 board (PDF)"
-	            }, {
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/user_manual/1b/03/1b/b4/88/20/4e/cd/DM00105928.pdf/files/DM00105928.pdf/jcr:content/translations/en.DM00105928.pdf",
-	                value: "UM1727 User manual: Getting started with STM32 Nucleo board software development tools (PDF)"
-	            }]
-	        }]
-	    }]
-	}, {
-	    name: "ST NUCLEO-F401RE",
-	    description: [{
-	        type: "text",
-	        value: "STM32 F4 Nucleo-Board von ST"
-	    }, {
-	        type: "link",
-	        target: "http://www.st.com/en/evaluation-tools/nucleo-f401re.html",
-	        value: "ST Product-Page"
-	    }],
-	    partials: [{
-	        partial: "MicroController",
-	        name: 'STM32F401RE',
-	        sections: [{
-	            section: "User Manuals",
-	            entries: [{
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/user_manual/98/2e/fa/4b/e0/82/43/b7/DM00105823.pdf/files/DM00105823.pdf/jcr:content/translations/en.DM00105823.pdf",
-	                value: "UM1724 User manual: STM32 Nucleo-64 board (PDF)"
-	            }, {
-	                type: 'link',
-	                target: "http://www.st.com/content/ccc/resource/technical/document/user_manual/1b/03/1b/b4/88/20/4e/cd/DM00105928.pdf/files/DM00105928.pdf/jcr:content/translations/en.DM00105928.pdf",
-	                value: "UM1727 User manual: Getting started with STM32 Nucleo board software development tools (PDF)"
-	            }]
-	        }]
-	    }]
-	}, { rfid: '65416597' }];
-
-/***/ },
-/* 215 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "NCP1117 5V Voltage Regulator",
-	    description: [{
-	        type: "text",
-	        value: "NCP1117 5V - 1.0 A Low-Dropout Positive Fixed and Adjustable Voltage Regulators"
-	    }, {
-	        type: "link",
-	        target: "https://www.ehajo.de/bauelemente/aktiv/spannungsversorgung/ncp1117-5v.html?search=200.047&description=true",
-	        value: "eHaJo Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF",
-	        value: "onsemi Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "TPS71533 3.3V Low-Dropout (LDO) Voltage Regulator",
-	    description: [{
-	        type: "text",
-	        value: "TPS71533 3.3V - 50-mA, 24-V, 3.2-μA Supply Current Low-Dropout Linear Regulator in SC70 package"
-	    }, {
-	        type: "link",
-	        target: "https://www.ehajo.de/bauelemente/aktiv/spannungsversorgung/tps71533.html?search=100.024&description=true",
-	        value: "eHaJo Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://www.ti.com/lit/ds/symlink/tps715.pdf",
-	        value: "TI Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "WS2812B Neopixel",
-	    description: [{
-	        type: "text",
-	        value: "WS2812B - Intelligent control LED integrated light source"
-	    }, {
-	        type: "link",
-	        target: "https://www.ehajo.de/bauelemente/aktiv/optoelektronik/ws2812b-intelligente-rgb-led.html?search=200.054&description=true",
-	        value: "eHaJo Product Page"
-	    }, {
-	        type: "link",
-	        target: "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
-	        value: "Worldsemi Datasheet (PDF)"
-	    }]
-	}];
-	
-	/**
-	 65466597
-	 */
-
-/***/ },
-/* 216 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Adafruit Pi Cobbler",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-pi-cobbler-kit/overview",
-	        value: "Tutorial Overview * (Adafruit)"
-	    }]
-	}, {
-	    name: "Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }],
-	    sections: [{
-	        section: "Documentation",
-	        entries: [{
-	            type: "link",
-	            target: "https://www.adafruit.com/product/815",
-	            value: "Product-Page"
-	        }, {
-	            type: "link",
-	            target: "https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf",
-	            value: "DataSheet (PDF)"
-	        }]
-	    }]
-	}, {
-	    name: "Adafruit JTAG (2x10 2.54mm) to SWD (2x5 1.27mm) Cable Adapter Board",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }],
-	    sections: [{
-	        section: "Documentation",
-	        entries: [{
-	            type: "link",
-	            target: "https://www.adafruit.com/product/2094",
-	            value: "Product-Page"
-	        }]
-	    }]
-	}, {
-	    name: "USB LiIon/LiPoly charger MCP73833",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://www.adafruit.com/product/259",
-	        value: "Product-Page"
-	    }, {
-	        type: "link",
-	        target: "http://ww1.microchip.com/downloads/en/DeviceDoc/22005b.pdf",
-	        value: "MCP73833 Datsheet (PDF)"
-	    }]
-	}, {
-	    name: "AdafruitPowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }],
-	    sections: [{
-	        section: "Documentation",
-	        entries: [{
-	            type: "link",
-	            target: "https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/overview",
-	            value: "Tutorial Overview (Adafruit)"
-	        }, {
-	            type: "link",
-	            target: "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
-	            value: "TPS61090 Datsheet (PDF)"
-	        }]
-	    }]
-	}, {
-	    name: "ADS1115 - 16-Bit ADC - 4 Channel with Programmable Gain Amplifier",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts",
-	        value: "Tutorial Overview (Adafruit)"
-	    }, {
-	        type: "link",
-	        target: "http://www.ti.com/lit/ds/symlink/ads1115.pdf",
-	        value: "Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "BSS138 - 4-CHANNEL I2C-SAFE BI-DIRECTIONAL LOGIC LEVEL CONVERTER",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://www.adafruit.com/product/757",
-	        value: "Adafruit Product-Page"
-	    }, {
-	        type: "link",
-	        target: "https://cdn-shop.adafruit.com/datasheets/BSS138.pdf",
-	        value: "Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "SWD (2x5 1.27mm) Cable Breakout Board",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://www.adafruit.com/products/2743",
-	        value: "Adafruit Product-Page"
-	    }]
-	}, {
-	    name: "DS2413 1-Wire Two GPIO Controller Breakout",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-1-wire-gpio-breakout-ds2413",
-	        value: "Tutorial Overview (Adafruit)"
-	    }, {
-	        type: "link",
-	        target: "https://datasheets.maximintegrated.com/en/ds/DS2413.pdf",
-	        value: "Datasheet (PDF)"
-	    }]
-	}, { rfid: '65576597' }];
-
-/***/ },
-/* 217 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Electret Microphone Amplifier",
-	    description: [{
-	        type: "text",
-	        value: "MAX4466 with Adjustable Gain"
-	    }, {
-	        type: "link",
-	        target: "https://www.adafruit.com/products/1063",
-	        value: "Product-Page (Adafruit)"
-	    }, {
-	        type: "link",
-	        target: "https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf",
-	        value: "Datasheet (PDF)"
-	    }]
-	}];
-	
-	/*
-	 65596597.html
-	 */
-
-/***/ },
-/* 218 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Bluefruit LE Micro",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Bluefruit LE Micro - Bluetooth Low Energy + ATmega32u4 (Discontinued)"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/bluefruit-le-micro-atmega32u4-microcontroller-usb-bluetooth-le-in-one",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Adafruit Bluefruit LE Friend",
-	    description: [{
-	        type: "text",
-	        value: "Bluefruit LE Friend - Bluetooth Low Energy (BLE 4.0) - nRF51822"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/introducing-adafruit-ble-bluetooth-low-energy-friend/software-resources?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Adafruit Feather 32u4 Bluefruit LE ATmega32u4 8Mhz",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Feather 32u4 Bluefruit LE"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/overview?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Bluefruit LE - Bluetooth Low Energy (BLE 4.0) - nRF8001 Breakout",
-	    description: [{
-	        type: "text",
-	        value: "nRF8001 Bluefruit LE Breakout"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/getting-started-with-the-nrf8001-bluefruit-le-breakout/pinouts?view=all",
-	        value: "Adafruit Tutorial"
-	    }]
-	}];
-	/*
-	 939259f5.html
-	 */
-
-/***/ },
-/* 219 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Feather M0 RFM69HCW ATSAMD21G18",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Feather M0 Radio with RFM69 Packet Radio (433MHz)"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-feather-m0-radio-with-rfm69-packet-radio/overview",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Feather 32u4 RFM69HCW Atmega32u4",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Feather 32u4 Radio with RFM69 Packet Radio (433MHz)"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-feather-32u4-radio-with-rfm69hcw-module/overview",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Adafruit Radio FeatherWing - RFM69HCW",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Radio FeatherWing - RFM69HCW (433MHZ)"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/radio-featherwing",
-	        value: "Adafruit Tutorial"
-	    }]
-	}, {
-	    name: "Feather M0 RFM96 LoRa Radio ATSAMD21G18",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit Feather M0 RFM96 LoRa Radio (433 MHz)"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module",
-	        value: "Adafruit Tutorial"
-	    }]
-	}];
-	/*
-	 93c75cf5.html
-	 */
-
-/***/ },
-/* 220 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "LoRa OSHPark Feather Parts",
-	    description: [{
-	        type: "text",
-	        value: "LoRa FeatherWing Development Breakout"
-	    }, {
-	        type: "link",
-	        target: "http://syncchannel.blogspot.de/2016/02/lora-featherwing-development-breakout.html",
-	        value: "The Sync Channel Blog"
-	    }],
-	    partials: [{
-	        partial: "Ceramic Capacitor",
-	        name: "Ceramic Capacitor 0603 0.1uF 16V",
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: "link",
-	                target: "http://www.mouser.de/ProductDetail/Vishay/VJ0603Y104KXJAP/?qs=%2fha2pyFadujAlg9bQeFPZ7BD0yBCKWDfL4yyvw%252bmPvMNj5dHwUgufw%3d%3d",
-	                value: "Mouser Product-Page"
-	            }, {
-	                type: "link",
-	                target: "http://www.mouser.com/ds/2/427/vjcommercialseries-222796.pdf",
-	                value: "Datenblatt (PDF)"
-	            }]
-	        }]
-	    }, {
-	        partial: "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
-	        name: "Reichelt: X7R-G0603 1,0/16",
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: "link",
-	                target: "https://www.reichelt.de/partsIndex.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
-	                value: "Reichelt Product-Page"
-	            }]
-	        }]
-	    }, {
-	        partial: "Tantalum Kondnsator 47uF 10V",
-	        name: "Mouser: 647-F951A476MTAAQ2 ",
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: "link",
-	                target: "http://www.mouser.de/ProductDetail/AVX/F951A476MTAAQ2/?qs=%2fha2pyFaduh6UP5i8fH4Y5d3NVkee0fi6wxL7elzuA5dEMNPmlQJK50IVN8eTNot",
-	                value: "Mouser Product-Page"
-	            }, {
-	                type: "link",
-	                target: "http://www.mouser.com/ds/2/40/f95-776234.pdf",
-	                value: "AVX Datasheet"
-	            }]
-	        }]
-	    }, {
-	        partial: "LoRa Tranceiver",
-	        name: "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
-	        sections: [{
-	            section: "Documentation",
-	            entries: [{
-	                type: "link",
-	                target: "http://cgi.ebay.de/ws/eBayISAPI.dll?ViewItem&item=171363005217#ht_585wt_1165",
-	                value: "Ebay/anarduino - Product Page"
-	            }, {
-	                type: "link",
-	                target: "http://www.hoperf.com/rf_transceiver/lora/RFM95W.html",
-	                value: "HopeRF - Product Page"
-	            }, {
-	                type: "link",
-	                target: "http://www.anarduino.com/docs/RFM95_96_97_98W.pdf",
-	                value: "Datasheet (PDF)"
-	            }]
-	        }]
-	    }]
-	
-	}];
-	/*
-	 95116597.html
-
-	 */
-
-/***/ },
-/* 221 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "LM 358 Operationsverstärker",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: LM 358 LOW POWER DUAL OPERATIONAL AMPLIFIERS, SMD, 2-fach, SO-8"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18716;SEARCH=LM%20358%20",
-	        value: "Reichelt Product page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/LM258_LM358%23STM.pdf",
-	        value: "ST Datasheet (PDF)"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/LM2904_LM258_LM358%23TEX.pdf",
-	        value: "TI Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "LM 358 Operationsverstärker",
-	    description: [{
-	        type: "text",
-	        value: "Linear IC - Operationsverstärker Texas Instruments LM358D Mehrzweck SOIC-8"
-	    }, {
-	        type: "link",
-	        target: "https://www.conrad.de/de/linear-ic-operationsverstaerker-texas-instruments-lm358d-mehrzweck-soic-8-142506.html",
-	        value: "Conrad Product page"
-	    }, {
-	        type: "link",
-	        target: "http://www.produktinfo.conrad.com/datenblaetter/125000-149999/142506-da-01-en-IC_SMD_2_FACH_OP_LM_358_DG_SO8_TID.pdf",
-	        value: "TI Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "LM 324 D Low power quad operational amplifiers",
-	    description: [{
-	        type: "text",
-	        value: "Linear IC - Operationsverstärker STMicroelectronics LM324D Mehrzweck SOIC-14"
-	    }, {
-	        type: "link",
-	        target: "https://www.conrad.de/de/linear-ic-operationsverstaerker-stmicroelectronics-lm324d-mehrzweck-soic-14-142484.html",
-	        value: "Conrad Product page"
-	    }, {
-	        type: "link",
-	        target: "http://www.produktinfo.conrad.com/datenblaetter/125000-149999/142484-da-01-en-IC_SMD_4_FACH_OP_LM_324_SO14__STM.pdf",
-	        value: "ST Datasheet (PDF)"
-	    }]
-	}];
-
-/***/ },
-/* 222 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "BCP 55 NPN Transistor",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: BCP 55-10 SMD / SMD NPN SOT-223 60V 1A 1,3W"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/DS_BCP55_BCX55_BC55PA-NXP.pdf",
-	        value: "NXP Datasheet"
-	    }]
-	}, {
-	    name: "BDP948 PNP Silicon AF Power Transistor",
-	    description: [{
-	        type: "text",
-	        value: "Reichelt: BDP 948 SMD / SMD PNP SOT-223 45V 3A 3W"
-	    }, {
-	        type: "link",
-	        target: "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
-	        value: "Reichelt Product Page"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A100/BDP948_BDP950_BDP954-INF.pdf",
-	        value: "Infineon Datasheet"
-	    }]
-	}];
-
-/***/ },
-/* 223 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "ST NE555N",
-	    description: [{
-	        type: "text",
-	        value: "General-purpose single bipolar timers DIP-8"
-	    }, {
-	        type: "link",
-	        target: "http://www.st.com/content/ccc/resource/technical/document/datasheet/ba/0a/d7/6e/7c/db/4e/12/CD00000479.pdf/files/CD00000479.pdf/jcr:content/translations/en.CD00000479.pdf",
-	        value: "ST Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "ST NE555D",
-	    description: [{
-	        type: "text",
-	        value: "General-purpose single bipolar timers SO-8"
-	    }, {
-	        type: "link",
-	        target: "http://cdn-reichelt.de/documents/datenblatt/A200/NE555_SA555%23STM.pdf",
-	        value: "ST Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "TI LM555CM/NOBP",
-	    description: [{
-	        type: "text",
-	        value: "Linear IC Texas Instruments LM555CM/NOBP SO-8"
-	    }, {
-	        type: "link",
-	        target: "http://www.produktinfo.conrad.com/datenblaetter/150000-174999/152343-da-01-en-IC_LM_555_CM___NOBP_SO8__TID.pdf",
-	        value: "TI Datasheet (PDF)"
-	    }]
-	}];
-	/*
-	 a26a65e6.html
-	 */
-
-/***/ },
-/* 224 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "LM567CM",
-	    description: [{
-	        type: "text",
-	        value: "LM567x Tone Decoder"
-	    }, {
-	        type: "link",
-	        target: "http://www.ti.com/lit/ds/symlink/lm567.pdf",
-	        value: "Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "CD4050BE",
-	    description: [{
-	        type: "text",
-	        value: "CD4049UB and CD4050B CMOS Hex Inverting Buffer and Converter"
-	    }, {
-	        type: "link",
-	        target: "http://www.ti.com/lit/ds/symlink/cd4050b-mil.pdf",
-	        value: "Datasheet (PDF)"
-	    }]
-	}];
-	/*
-	 c30258f5.html
-	 */
-
-/***/ },
-/* 225 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "LM35 Precision Centigrade Temperature Sensors",
-	    description: [{
-	        type: "text",
-	        value: "TI LM35 Precision Centigrade Temperature Sensors"
-	    }, {
-	        type: "link",
-	        target: "http://www.ti.com/lit/ds/symlink/lm35.pdf",
-	        value: "TI Datasheet (PDF)"
-	    }]
-	}];
-	
-	/*
-	 d5466497.html
-	 */
-
-/***/ },
-/* 226 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Digital Distance Sensor 5cm",
-	    description: [{
-	        type: "text",
-	        value: "Sharp GP2Y0D805Z0F Digital Distance Sensor 5cm"
-	    }, {
-	        type: "link",
-	        target: "https://www.pololu.com/product/1131",
-	        value: "Pololu Product Page"
-	    }]
-	}, {
-	    name: "Carrier for Sharp Sensors",
-	    description: [{
-	        type: "text",
-	        value: "Pololu Carrier for Sharp GP2Y0D815Z0F, GP2Y0D810Z0F, and GP2Y0D805Z0F Sensors"
-	    }, {
-	        type: "link",
-	        target: "https://www.pololu.com/product/1133",
-	        value: "Pololu Product Page"
-	    }]
-	}, {
-	    name: "Digital Distance Sensor 10cm",
-	    description: [{
-	        type: "text",
-	        value: "Pololu Carrier with Sharp GP2Y0D810Z0F Digital Distance Sensor 10"
-	    }, {
-	        type: "link",
-	        target: "https://www.pololu.com/product/1134",
-	        value: "Pololu Product Page"
-	    }]
-	}, {
-	    name: "Adjustable Step-Up/Step-Down Voltage Regulator",
-	    description: [{
-	        type: "text",
-	        value: "Pololu Adjustable Step-Up/Step-Down Voltage Regulator S7V8A"
-	    }, {
-	        type: "link",
-	        target: "https://www.pololu.com/product/2118",
-	        value: "Pololu Product Page"
-	    }]
-	}, {
-	    name: "38 kHz IR Proximity Sensor",
-	    description: [{
-	        type: "text",
-	        value: "Pololu 38 kHz IR Proximity Sensor, Fixed Gain, High Brightness (irs05a)"
-	    }, {
-	        type: "link",
-	        target: "https://www.pololu.com/product/2460",
-	        value: "Pololu Product Page"
-	    }, {
-	        type: "link",
-	        target: "https://www.pololu.com/file/download/pololu-38khz-ir-proximity-sensor-irs05a-schematic-diagram.pdf?file_id=0J614",
-	        value: "Schematic (PDF)"
-	    }]
-	}];
-	/*
-	 d5ab6497.html
-	 */
-
-/***/ },
-/* 227 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Digitaler Lichtsensor SEN10171P",
-	    description: [{
-	        type: "text",
-	        value: "Seeed Studio Digitaler Lichtsensor SEN10171P I2C Passend fuer Serie: C-Control Duino, Grove"
-	    }, {
-	        type: "link",
-	        target: "https://www.conrad.de/de/seeed-studio-digitaler-lichtsensor-sen10171p-ic-passend-fuer-serie-c-control-duino-grove-1369529.html",
-	        value: "Conrad Product Page"
-	    }]
-	}, {
-	    name: "1-wire Digital Thermometer DS18B20",
-	    description: [{
-	        type: "text",
-	        value: "Programmable Resolution 1-Wire Digital Thermometer"
-	    }, {
-	        type: "link",
-	        target: "http://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf",
-	        value: "Datasheet (PDF)"
-	    }]
-	}, {
-	    name: "Adafruit 9-DOF IMU Breakout",
-	    description: [{
-	        type: "text",
-	        value: "Adafruit 9-DOF IMU Breakout - L3GD20H + LSM303"
-	    }, {
-	        type: "link",
-	        target: "https://learn.adafruit.com/adafruit-9-dof-imu-breakout",
-	        value: "Adafruit Tutorial"
-	    }]
-	}];
-	/*
-	 d5b76497.html
-	 */
-
-/***/ },
-/* 228 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "Vibration Motor 11.6 x 4.6 x 4.8mm",
-	    description: [{
-	        type: "text",
-	        value: "Vibration Motor 11.6 x 4.6 x 4.8mm (Plololu #2265)"
-	    }, {
-	        type: "link",
-	        target: "https://www.pololu.com/product/2265",
-	        value: "Pololu Product Page"
-	    }]
-	}];
-	/*
-	 d5b96497.html
-	 */
-
-/***/ },
-/* 229 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	module.exports = [{
-	    name: "",
-	    description: [{
-	        type: "text",
-	        value: ""
-	    }, {
-	        type: "link",
-	        target: "",
-	        value: ""
-	    }],
-	    sections: [{
-	        section: "",
-	        entries: [{
-	            type: "link",
-	            target: "",
-	            value: ""
-	        }]
-	    }],
-	    partials: [{
-	        partial: "MicroController",
-	        name: "",
-	        sections: [{
-	            section: "",
-	            entries: [{
-	                type: "link",
-	                target: "",
-	                value: ""
-	            }]
-	        }]
-	    }]
-	
-	}];
-
-/***/ },
-/* 230 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -23596,8 +22461,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var id = 0;
 	
 	var Rfid = function (_Component) {
 	    _inherits(Rfid, _Component);
@@ -23629,6 +22492,2256 @@
 	}(_react.Component);
 	
 	exports.default = Rfid;
+
+/***/ },
+/* 209 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _redux = __webpack_require__(167);
+	
+	var _parts_list_reducer = __webpack_require__(210);
+	
+	var _parts_list_reducer2 = _interopRequireDefault(_parts_list_reducer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var rootReducer = (0, _redux.combineReducers)({
+	  parts: _parts_list_reducer2.default
+	});
+	
+	exports.default = rootReducer;
+
+/***/ },
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	exports.default = function () {
+	    return partslist;
+	};
+	
+	var partslist = __webpack_require__(211)("./" + window.location.search.substring(1) + ".json");
+
+/***/ },
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var map = {
+		"./13d05df5.json": 213,
+		"./653a6597.json": 214,
+		"./653f6597.json": 215,
+		"./65416597.json": 216,
+		"./65466597.json": 217,
+		"./65576597.json": 218,
+		"./65596597.json": 219,
+		"./939259f5.json": 220,
+		"./93c75cf5.json": 221,
+		"./95116597.json": 222,
+		"./95336597.json": 223,
+		"./95356597.json": 224,
+		"./a26a65e6.json": 225,
+		"./c30258f5.json": 226,
+		"./d5466497.json": 227,
+		"./d5ab6497.json": 228,
+		"./d5b76497.json": 229,
+		"./d5b96497.json": 230,
+		"./partsIndex.json": 212
+	};
+	function webpackContext(req) {
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
+	module.exports = webpackContext;
+	webpackContext.id = 211;
+
+
+/***/ },
+/* 212 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"key": "0033R",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "007R",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "01uF",
+		"rfids": ["95116597"]
+	}, {
+		"key": "0603",
+		"rfids": ["95116597"]
+	}, {
+		"key": "07",
+		"rfids": ["65416597"]
+	}, {
+		"key": "10",
+		"rfids": ["65466597", "d5ab6497"]
+	}, {
+		"key": "1000",
+		"rfids": ["65576597"]
+	}, {
+		"key": "1016",
+		"rfids": ["95116597"]
+	}, {
+		"key": "10V",
+		"rfids": ["95116597"]
+	}, {
+		"key": "10cm",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "10uF",
+		"rfids": ["95116597"]
+	}, {
+		"key": "116",
+		"rfids": ["d5b96497"]
+	}, {
+		"key": "125W",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "127mm",
+		"rfids": ["65576597"]
+	}, {
+		"key": "12bit",
+		"rfids": ["65576597"]
+	}, {
+		"key": "13W",
+		"rfids": ["95356597"]
+	}, {
+		"key": "1458",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "15",
+		"rfids": ["65416597"]
+	}, {
+		"key": "16Bit",
+		"rfids": ["65576597"]
+	}, {
+		"key": "16Channel",
+		"rfids": ["65576597"]
+	}, {
+		"key": "16V",
+		"rfids": ["95116597"]
+	}, {
+		"key": "1A",
+		"rfids": ["95356597"]
+	}, {
+		"key": "1Wire",
+		"rfids": ["65576597", "d5b76497"]
+	}, {
+		"key": "1wire",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "20V",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "2265",
+		"rfids": ["d5b96497"]
+	}, {
+		"key": "2313",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "2314",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "24",
+		"rfids": ["65416597"]
+	}, {
+		"key": "24V",
+		"rfids": ["65466597"]
+	}, {
+		"key": "254mm",
+		"rfids": ["65576597"]
+	}, {
+		"key": "2W",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "2fach",
+		"rfids": ["95336597"]
+	}, {
+		"key": "2x10",
+		"rfids": ["65576597"]
+	}, {
+		"key": "2x5",
+		"rfids": ["65576597"]
+	}, {
+		"key": "30V",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "324",
+		"rfids": ["95336597"]
+	}, {
+		"key": "32A",
+		"rfids": ["65466597"]
+	}, {
+		"key": "32u4",
+		"rfids": ["939259f5", "93c75cf5"]
+	}, {
+		"key": "33A",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "33V",
+		"rfids": ["65466597"]
+	}, {
+		"key": "3401A",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "3418",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "358",
+		"rfids": ["95336597"]
+	}, {
+		"key": "38",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "38A",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "3A",
+		"rfids": ["95356597"]
+	}, {
+		"key": "3W",
+		"rfids": ["95356597"]
+	}, {
+		"key": "40",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "433",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "433MHZ",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "433MHz",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "433Mhz",
+		"rfids": ["95116597"]
+	}, {
+		"key": "4558",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "45V",
+		"rfids": ["95356597"]
+	}, {
+		"key": "46",
+		"rfids": ["d5b96497"]
+	}, {
+		"key": "47uF",
+		"rfids": ["95116597"]
+	}, {
+		"key": "48mm",
+		"rfids": ["d5b96497"]
+	}, {
+		"key": "49A",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "4A",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "4CHANNEL",
+		"rfids": ["65576597"]
+	}, {
+		"key": "4MB",
+		"rfids": ["13d05df5"]
+	}, {
+		"key": "50mA",
+		"rfids": ["65466597"]
+	}, {
+		"key": "55",
+		"rfids": ["95356597"]
+	}, {
+		"key": "5510",
+		"rfids": ["95356597"]
+	}, {
+		"key": "5V",
+		"rfids": ["65466597", "65576597"]
+	}, {
+		"key": "5cm",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "60V",
+		"rfids": ["95356597"]
+	}, {
+		"key": "647F951A476MTAAQ2",
+		"rfids": ["95116597"]
+	}, {
+		"key": "80MHz",
+		"rfids": ["13d05df5"]
+	}, {
+		"key": "8Mhz",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "948",
+		"rfids": ["95356597"]
+	}, {
+		"key": "9DOF",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "ADC",
+		"rfids": ["65576597"]
+	}, {
+		"key": "ADS1115",
+		"rfids": ["65576597"]
+	}, {
+		"key": "AF",
+		"rfids": ["95356597"]
+	}, {
+		"key": "AMPLIFIERS",
+		"rfids": ["95336597"]
+	}, {
+		"key": "AO",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "ATSAMD21G18",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "ATmega32u4",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "AVX",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Adafruit",
+		"rfids": ["13d05df5", "65416597", "65576597", "65596597", "939259f5", "93c75cf5", "d5b76497"]
+	}, {
+		"key": "AdafruitPowerBoost",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Adapter",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Adjustable",
+		"rfids": ["65466597", "65596597", "d5ab6497"]
+	}, {
+		"key": "Alpha",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "Amplifier",
+		"rfids": ["65576597", "65596597"]
+	}, {
+		"key": "Atmega32u4",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "BCP",
+		"rfids": ["95356597"]
+	}, {
+		"key": "BDP",
+		"rfids": ["95356597"]
+	}, {
+		"key": "BDP948",
+		"rfids": ["95356597"]
+	}, {
+		"key": "BIDIRECTIONAL",
+		"rfids": ["65576597"]
+	}, {
+		"key": "BLE",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "BSS138",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Blog",
+		"rfids": ["65416597", "95116597"]
+	}, {
+		"key": "Bluefruit",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "Bluetooth",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "Board",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Boost",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Breakout",
+		"rfids": ["13d05df5", "65576597", "939259f5", "95116597", "d5b76497"]
+	}, {
+		"key": "Brightness",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Buffer",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "CC3000",
+		"rfids": ["13d05df5"]
+	}, {
+		"key": "CControl",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "CD",
+		"rfids": ["65416597"]
+	}, {
+		"key": "CD4049UB",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "CD4050B",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "CD4050BE",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "CMOS",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "CONVERTER",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Cable",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Capacitor",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Carrier",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Centigrade",
+		"rfids": ["d5466497"]
+	}, {
+		"key": "Ceramic",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Channel",
+		"rfids": ["65576597", "95116597"]
+	}, {
+		"key": "Charger",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Cobbler",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Conrad",
+		"rfids": ["95336597", "d5b76497"]
+	}, {
+		"key": "Controller",
+		"rfids": ["65416597", "65576597"]
+	}, {
+		"key": "Converter",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "Current",
+		"rfids": ["65466597"]
+	}, {
+		"key": "DIP8",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "DS18B20",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "DS2413",
+		"rfids": ["65576597"]
+	}, {
+		"key": "DS9405",
+		"rfids": ["65416597"]
+	}, {
+		"key": "DUAL",
+		"rfids": ["95336597"]
+	}, {
+		"key": "DataSheet",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Datasheet",
+		"rfids": ["653a6597", "653f6597", "65416597", "65466597", "65576597", "65596597", "95116597", "95336597", "95356597", "a26a65e6", "c30258f5", "d5466497", "d5b76497"]
+	}, {
+		"key": "Datenblatt",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Datsheet",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Decoder",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "Description",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Development",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Digital",
+		"rfids": ["d5ab6497", "d5b76497"]
+	}, {
+		"key": "Digitaler",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "Discontinued",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "DiscoveryBoard",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Display",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Distance",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Documentation",
+		"rfids": ["65416597", "65576597", "95116597"]
+	}, {
+		"key": "Driver",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Dual",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "Duino",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "ESP8266",
+		"rfids": ["13d05df5"]
+	}, {
+		"key": "Ebayanarduino",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Electret",
+		"rfids": ["65596597"]
+	}, {
+		"key": "Energy",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "F4",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Feather",
+		"rfids": ["13d05df5", "939259f5", "93c75cf5", "95116597"]
+	}, {
+		"key": "FeatherWing",
+		"rfids": ["93c75cf5", "95116597"]
+	}, {
+		"key": "Fixed",
+		"rfids": ["65466597", "d5ab6497"]
+	}, {
+		"key": "Flash",
+		"rfids": ["13d05df5"]
+	}, {
+		"key": "Friend",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "G0603",
+		"rfids": ["95116597"]
+	}, {
+		"key": "GP2Y0D805Z0F",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "GP2Y0D810Z0F",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "GP2Y0D815Z0F",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "GPIO",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Gain",
+		"rfids": ["65576597", "65596597", "d5ab6497"]
+	}, {
+		"key": "Generalpurpose",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "Getting",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Grove",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "HAL",
+		"rfids": ["65416597"]
+	}, {
+		"key": "HUZZAH",
+		"rfids": ["13d05df5"]
+	}, {
+		"key": "Hex",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "High",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "HopeRF",
+		"rfids": ["95116597"]
+	}, {
+		"key": "I2C",
+		"rfids": ["65576597", "d5b76497"]
+	}, {
+		"key": "I2CSAFE",
+		"rfids": ["65576597"]
+	}, {
+		"key": "IC",
+		"rfids": ["95336597", "a26a65e6"]
+	}, {
+		"key": "ILI9341",
+		"rfids": ["65416597"]
+	}, {
+		"key": "IMU",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "IR",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Infineon",
+		"rfids": ["95356597"]
+	}, {
+		"key": "Instruments",
+		"rfids": ["95336597", "a26a65e6"]
+	}, {
+		"key": "Intelligent",
+		"rfids": ["65466597"]
+	}, {
+		"key": "Inverting",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "JTAG",
+		"rfids": ["65576597"]
+	}, {
+		"key": "KompletteLibraryListe",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Kondnsator",
+		"rfids": ["95116597"]
+	}, {
+		"key": "L3GD20H",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "LCD",
+		"rfids": ["65416597"]
+	}, {
+		"key": "LDO",
+		"rfids": ["65466597"]
+	}, {
+		"key": "LE",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "LED",
+		"rfids": ["65466597"]
+	}, {
+		"key": "LEVEL",
+		"rfids": ["65576597"]
+	}, {
+		"key": "LM",
+		"rfids": ["95336597"]
+	}, {
+		"key": "LM324D",
+		"rfids": ["95336597"]
+	}, {
+		"key": "LM35",
+		"rfids": ["d5466497"]
+	}, {
+		"key": "LM358D",
+		"rfids": ["95336597"]
+	}, {
+		"key": "LM555CMNOBP",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "LM567CM",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "LM567x",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "LOGIC",
+		"rfids": ["65576597"]
+	}, {
+		"key": "LOW",
+		"rfids": ["95336597"]
+	}, {
+		"key": "LSM303",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "LiIonLiPoly",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Libraries",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Library",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Lichtsensor",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "Limited",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Linear",
+		"rfids": ["65466597", "95336597", "a26a65e6"]
+	}, {
+		"key": "Lipo",
+		"rfids": ["65576597"]
+	}, {
+		"key": "LoRa",
+		"rfids": ["93c75cf5", "95116597"]
+	}, {
+		"key": "LoRaTM",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Long",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Low",
+		"rfids": ["939259f5", "95336597"]
+	}, {
+		"key": "LowDropout",
+		"rfids": ["65466597"]
+	}, {
+		"key": "M0",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "MAX4466",
+		"rfids": ["65596597"]
+	}, {
+		"key": "MC",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "MC1458",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "MCP73833",
+		"rfids": ["65576597"]
+	}, {
+		"key": "MHz",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "MODULE",
+		"rfids": ["65416597"]
+	}, {
+		"key": "MOSFET",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "Manual",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Manuals",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Mehrzweck",
+		"rfids": ["95336597"]
+	}, {
+		"key": "Micro",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "MicroController",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Microphone",
+		"rfids": ["65596597"]
+	}, {
+		"key": "Motor",
+		"rfids": ["d5b96497"]
+	}, {
+		"key": "Mouser",
+		"rfids": ["95116597"]
+	}, {
+		"key": "NCH",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "NCP1117",
+		"rfids": ["65466597"]
+	}, {
+		"key": "NCh",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "NE",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "NE555D",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "NE555N",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "NESASE4558",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "NO",
+		"rfids": ["65416597"]
+	}, {
+		"key": "NPN",
+		"rfids": ["95356597"]
+	}, {
+		"key": "NUCLEOF401RE",
+		"rfids": ["65416597"]
+	}, {
+		"key": "NUCLEOF411RE",
+		"rfids": ["65416597"]
+	}, {
+		"key": "NXP",
+		"rfids": ["95356597"]
+	}, {
+		"key": "Neopixel",
+		"rfids": ["65466597"]
+	}, {
+		"key": "Nucleo",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Nucleo64",
+		"rfids": ["65416597"]
+	}, {
+		"key": "NucleoBoard",
+		"rfids": ["65416597"]
+	}, {
+		"key": "OPERATIONAL",
+		"rfids": ["95336597"]
+	}, {
+		"key": "OSHPark",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Omega",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "OpAmp",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "Operationsverstrker",
+		"rfids": ["95336597"]
+	}, {
+		"key": "Overview",
+		"rfids": ["65576597"]
+	}, {
+		"key": "PCA9685",
+		"rfids": ["65576597"]
+	}, {
+		"key": "PCH",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "PCh",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "PDF",
+		"rfids": ["653a6597", "653f6597", "65416597", "65466597", "65576597", "65596597", "95116597", "95336597", "a26a65e6", "c30258f5", "d5466497", "d5ab6497", "d5b76497"]
+	}, {
+		"key": "PM0214",
+		"rfids": ["65416597"]
+	}, {
+		"key": "PNP",
+		"rfids": ["95356597"]
+	}, {
+		"key": "POWER",
+		"rfids": ["95336597"]
+	}, {
+		"key": "PWMServo",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Packet",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "Page",
+		"rfids": ["653a6597", "653f6597", "65466597", "95116597", "95356597", "d5ab6497", "d5b76497", "d5b96497"]
+	}, {
+		"key": "Parts",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Passend",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "Philips",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "Pi",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Plololu",
+		"rfids": ["d5b96497"]
+	}, {
+		"key": "Pololu",
+		"rfids": ["d5ab6497", "d5b96497"]
+	}, {
+		"key": "Positive",
+		"rfids": ["65466597"]
+	}, {
+		"key": "Power",
+		"rfids": ["95356597"]
+	}, {
+		"key": "Precision",
+		"rfids": ["d5466497"]
+	}, {
+		"key": "Product",
+		"rfids": ["653a6597", "653f6597", "65416597", "65466597", "95116597", "95336597", "95356597", "d5ab6497", "d5b76497", "d5b96497"]
+	}, {
+		"key": "ProductPage",
+		"rfids": ["65416597", "65576597", "65596597", "95116597"]
+	}, {
+		"key": "Programmable",
+		"rfids": ["65576597", "d5b76497"]
+	}, {
+		"key": "Programming",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Proximity",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "QVGA",
+		"rfids": ["65416597"]
+	}, {
+		"key": "RFM69",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "RFM69HCW",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "RFM96",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "RFM96W",
+		"rfids": ["95116597"]
+	}, {
+		"key": "RM0090",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Radio",
+		"rfids": ["93c75cf5"]
+	}, {
+		"key": "Range",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Rechargeable",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Reference",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Regulator",
+		"rfids": ["65466597", "d5ab6497"]
+	}, {
+		"key": "Regulators",
+		"rfids": ["65466597"]
+	}, {
+		"key": "Reichelt",
+		"rfids": ["653a6597", "653f6597", "95116597", "95336597", "95356597"]
+	}, {
+		"key": "Resolution",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "S7V8A",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "SC70",
+		"rfids": ["65466597"]
+	}, {
+		"key": "SEN10171P",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "SFTC240T9370AT",
+		"rfids": ["65416597"]
+	}, {
+		"key": "SMD",
+		"rfids": ["653a6597", "653f6597", "95336597", "95356597"]
+	}, {
+		"key": "SMDVielschichtkondensator",
+		"rfids": ["95116597"]
+	}, {
+		"key": "SO8",
+		"rfids": ["653f6597", "95336597", "a26a65e6"]
+	}, {
+		"key": "SOIC14",
+		"rfids": ["95336597"]
+	}, {
+		"key": "SOIC8",
+		"rfids": ["95336597"]
+	}, {
+		"key": "SOT223",
+		"rfids": ["95356597"]
+	}, {
+		"key": "SOT23",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "ST",
+		"rfids": ["65416597", "95336597", "a26a65e6"]
+	}, {
+		"key": "STM32",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F4",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F401RE",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F411RE",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F429",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F429Discovery",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F429IDISC1",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F429ZIT6U",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STM32F4xx",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STMPE811",
+		"rfids": ["65416597"]
+	}, {
+		"key": "STMicroelectronics",
+		"rfids": ["95336597"]
+	}, {
+		"key": "SWD",
+		"rfids": ["65576597"]
+	}, {
+		"key": "SX1276",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Saef",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Schematic",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Seeed",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "Sensor",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Sensors",
+		"rfids": ["d5466497", "d5ab6497"]
+	}, {
+		"key": "Serie",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "Sharp",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Silicon",
+		"rfids": ["95356597"]
+	}, {
+		"key": "Specification",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Spezification",
+		"rfids": ["65416597"]
+	}, {
+		"key": "StepUpStepDown",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "Studio",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "Supply",
+		"rfids": ["65466597"]
+	}, {
+		"key": "Sync",
+		"rfids": ["95116597"]
+	}, {
+		"key": "TARAEmbdWizard",
+		"rfids": ["65416597"]
+	}, {
+		"key": "TFT",
+		"rfids": ["65416597"]
+	}, {
+		"key": "TI",
+		"rfids": ["653f6597", "65466597", "95336597", "a26a65e6", "d5466497"]
+	}, {
+		"key": "TPS61090",
+		"rfids": ["65576597"]
+	}, {
+		"key": "TPS71533",
+		"rfids": ["65466597"]
+	}, {
+		"key": "TSC",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "TSM",
+		"rfids": ["653a6597"]
+	}, {
+		"key": "Tantalum",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Technology",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Temperature",
+		"rfids": ["d5466497"]
+	}, {
+		"key": "Texas",
+		"rfids": ["95336597", "a26a65e6"]
+	}, {
+		"key": "Thermometer",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "Tone",
+		"rfids": ["c30258f5"]
+	}, {
+		"key": "Touch",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Tranceiver",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Transceiver",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Transistor",
+		"rfids": ["95356597"]
+	}, {
+		"key": "Tutorial",
+		"rfids": ["13d05df5", "65576597", "939259f5", "93c75cf5", "d5b76497"]
+	}, {
+		"key": "Two",
+		"rfids": ["65576597"]
+	}, {
+		"key": "UM1724",
+		"rfids": ["65416597"]
+	}, {
+		"key": "UM1725",
+		"rfids": ["65416597"]
+	}, {
+		"key": "UM1727",
+		"rfids": ["65416597"]
+	}, {
+		"key": "USB",
+		"rfids": ["65576597"]
+	}, {
+		"key": "Ultra",
+		"rfids": ["95116597"]
+	}, {
+		"key": "User",
+		"rfids": ["65416597"]
+	}, {
+		"key": "Vibration",
+		"rfids": ["d5b96497"]
+	}, {
+		"key": "Voltage",
+		"rfids": ["65466597", "d5ab6497"]
+	}, {
+		"key": "WS2812B",
+		"rfids": ["65466597"]
+	}, {
+		"key": "WiFi",
+		"rfids": ["13d05df5"]
+	}, {
+		"key": "Wireless",
+		"rfids": ["95116597"]
+	}, {
+		"key": "Worldsemi",
+		"rfids": ["65466597"]
+	}, {
+		"key": "X7RG0603",
+		"rfids": ["95116597"]
+	}, {
+		"key": "amplifier",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "amplifiers",
+		"rfids": ["95336597"]
+	}, {
+		"key": "bipolar",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "board",
+		"rfids": ["65416597"]
+	}, {
+		"key": "charger",
+		"rfids": ["65576597"]
+	}, {
+		"key": "comparable",
+		"rfids": ["95116597"]
+	}, {
+		"key": "control",
+		"rfids": ["65466597"]
+	}, {
+		"key": "development",
+		"rfids": ["65416597"]
+	}, {
+		"key": "drivers",
+		"rfids": ["65416597"]
+	}, {
+		"key": "eHaJo",
+		"rfids": ["65466597"]
+	}, {
+		"key": "for",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "fuer",
+		"rfids": ["d5b76497"]
+	}, {
+		"key": "functionally",
+		"rfids": ["95116597"]
+	}, {
+		"key": "generalpurpose",
+		"rfids": ["653f6597"]
+	}, {
+		"key": "in",
+		"rfids": ["65466597"]
+	}, {
+		"key": "integrated",
+		"rfids": ["65466597"]
+	}, {
+		"key": "interface",
+		"rfids": ["65576597"]
+	}, {
+		"key": "irs05a",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "kHz",
+		"rfids": ["d5ab6497"]
+	}, {
+		"key": "light",
+		"rfids": ["65466597"]
+	}, {
+		"key": "manual",
+		"rfids": ["65416597"]
+	}, {
+		"key": "nRF51822",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "nRF8001",
+		"rfids": ["939259f5"]
+	}, {
+		"key": "of",
+		"rfids": ["65416597"]
+	}, {
+		"key": "onsemi",
+		"rfids": ["65466597"]
+	}, {
+		"key": "operational",
+		"rfids": ["653f6597", "95336597"]
+	}, {
+		"key": "package",
+		"rfids": ["65466597"]
+	}, {
+		"key": "page",
+		"rfids": ["95336597"]
+	}, {
+		"key": "power",
+		"rfids": ["95336597"]
+	}, {
+		"key": "quad",
+		"rfids": ["95336597"]
+	}, {
+		"key": "single",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "software",
+		"rfids": ["65416597"]
+	}, {
+		"key": "source",
+		"rfids": ["65466597"]
+	}, {
+		"key": "started",
+		"rfids": ["65416597"]
+	}, {
+		"key": "timers",
+		"rfids": ["a26a65e6"]
+	}, {
+		"key": "to",
+		"rfids": ["65576597", "95116597"]
+	}, {
+		"key": "tools",
+		"rfids": ["65416597"]
+	}, {
+		"key": "von",
+		"rfids": ["65416597"]
+	}, {
+		"key": "with",
+		"rfids": ["13d05df5", "65416597", "65576597", "65596597", "93c75cf5", "d5ab6497"]
+	}];
+
+/***/ },
+/* 213 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Adafruit Feather HUZZAH with ESP8266 WiFi",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit Feather HUZZAH ESP8266 WiFi 4MB Flash 80MHz"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-nodemcu-lua?view=all",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Adafruit HUZZAH ESP8266 Breakout",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit HUZZAH ESP8266 WiFi Breakout"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/faq?view=all",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Adafruit CC3000 WiFi",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit CC3000 WiFi Breakout"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-cc3000-wifi/downloads?view=all",
+			"value": "Adafruit Tutorial"
+		}]
+	}];
+
+/***/ },
+/* 214 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "MOSFET P-CH, 30V, 4A, SOT-23",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: AO 3401A"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/ICs-NE-STV-/NE-555-D-SMD/3/partsIndex.html?ACTION=3;ARTICLE=166486;SEARCH=a0%203401a",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A100/AO3401A_SPEC.pdf",
+			"value": "Alpha & Omega Datasheet (PDF)"
+		}]
+	}, {
+		"name": "MOSFET N-CH, 30V, 3,8A, SOT-23",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: AO 3418"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=166480&GROUPID=7161&artnr=AO+3418&SEARCH=A0%2B3418",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A100/AO3418_SPEC.pdf",
+			"value": "Alpha & Omega Datasheet (PDF)"
+		}]
+	}, {
+		"name": "MOSFET N-Ch 20V 4,9A 1,25W 0,033R SOT23",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: TSM 2314 SMD"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/AO-BTS-Transistoren/AO-3418/3/partsIndex.html?ACTION=3;ARTICLE=115911;SEARCH=TSM%202314",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2314-TSC.pdf",
+			"value": "TSC Datasheet (PDF)"
+		}]
+	}, {
+		"name": "MOSFET P-Ch 20V 3,3A 2W 0,07R SOT23",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: TSM 2313 SMD"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3&LA=446&ARTICLE=115910&GROUPID=4350&artnr=TSM+2313+SMD&SEARCH=TSM%2B2313%2BSMD",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/DS_TSM2313-TSC.pdf",
+			"value": "TSC Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 215 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Dual general-purpose operational amplifier NE/SA/SE4558",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: NE 4558 D SMD / Op-Amp, SO-8"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18790;SEARCH=NE%204558",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/NE4558%23PHI.pdf",
+			"value": "Philips Datasheet (PDF)"
+		}]
+	}, {
+		"name": "Dual general-purpose operational amplifier MC1458",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: MC 1458 D SMD / Op-Amp, SO-8"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18774;SEARCH=MC%201458",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23TEX.pdf",
+			"value": "TI Datasheet (PDF)"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/MC1458_MC1558%23PHI.pdf",
+			"value": "Philips Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 216 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "STM32F429-Discovery (STM32F429I-DISC1)",
+		"description": [{
+			"type": "text",
+			"value": "STM32 Discovery-Board von ST"
+		}, {
+			"type": "link",
+			"target": "http://www.st.com/en/evaluation-tools/32f429idiscovery.html",
+			"value": "ST Product-Page"
+		}],
+		"partials": [{
+			"partial": "MicroController",
+			"name": "STM32F429ZIT6U",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "http://www.st.com/en/microcontrollers/stm32f429zi.html",
+					"value": "Product-Page"
+				}, {
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/user_manual/2f/71/ba/b8/75/54/47/cf/DM00105879.pdf/files/DM00105879.pdf/jcr:content/translations/en.DM00105879.pdf",
+					"value": "UM1725 - STM32F4 User Manual: Description of STM32F4xx HAL drivers (PDF)"
+				}, {
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/datasheet/03/b4/b2/36/4c/72/49/29/DM00071990.pdf/files/DM00071990.pdf/jcr:content/translations/en.DM00071990.pdf",
+					"value": "DS9405 - Product Specification (PDF)"
+				}, {
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/reference_manual/3d/6d/5a/66/b4/99/40/d4/DM00031020.pdf/files/DM00031020.pdf/jcr:content/translations/en.DM00031020.pdf",
+					"value": "RM0090 - Reference Manual (PDF)"
+				}, {
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/programming_manual/6c/3a/cb/e7/e4/ea/44/9b/DM00046982.pdf/files/DM00046982.pdf/jcr:content/translations/en.DM00046982.pdf",
+					"value": "PM0214  - Programming Manual (PDF)"
+				}]
+			}, {
+				"section": "Libraries",
+				"entries": [{
+					"type": "link",
+					"target": "http://mikrocontroller.bplaced.net/wordpress/?page_id=2736",
+					"value": "Blog: Komplette-Library-Liste (STM32F429)"
+				}]
+			}]
+		}, {
+			"partial": "Display",
+			"name": "2.4\" QVGA TFT LCD - Saef Technology Limited, MODULE NO SF-TC240T-9370A-T",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "http://galaxy.agh.edu.pl/~amrozek/TM/SF_TC240T_9370A_T.pdf",
+					"value": "Spezification (PDF)"
+				}]
+			}, {
+				"section": "Libraries",
+				"entries": [{
+					"type": "link",
+					"target": "http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-3rd-party-embedded-software/dra-touchgfx.html",
+					"value": "TARA-Embd-Wizard"
+				}]
+			}]
+		}, {
+			"partial": "TFT Controller",
+			"name": "ILI9341",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf",
+					"value": "Datasheet (Adafruit)"
+				}]
+			}, {
+				"section": "Libraries",
+				"entries": [{
+					"type": "link",
+					"target": "hhttp://mikrocontroller.bplaced.net/wordpress/?page_id=2753",
+					"value": "Blog: 07 -L CD ILI9341 - Library (STM32F429)"
+				}]
+			}]
+		}, {
+			"partial": "Touch Controller",
+			"name": "STMPE811",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/datasheet/d3/4a/58/38/4f/fa/46/2d/CD00186725.pdf/files/CD00186725.pdf/jcr:content/translations/en.CD00186725.pdf",
+					"value": "ST - Datasheet (PDF)"
+				}]
+			}, {
+				"section": "Libraries",
+				"entries": [{
+					"type": "link",
+					"target": "http://mikrocontroller.bplaced.net/wordpress/?page_id=2877",
+					"value": "Blog: 15 - Touch STMPE811 - Library (STM32F429)"
+				}]
+			}]
+		}]
+	}, {
+		"name": "ST NUCLEO-F411RE",
+		"description": [{
+			"type": "text",
+			"value": "STM32 F4 Nucleo-Board von ST"
+		}, {
+			"type": "link",
+			"target": "http://www.st.com/en/evaluation-tools/nucleo-f411re.html",
+			"value": "ST Product-Page"
+		}],
+		"partials": [{
+			"partial": "MicroController",
+			"name": "STM32F411RE",
+			"sections": [{
+				"section": "User Manuals",
+				"entries": [{
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/user_manual/98/2e/fa/4b/e0/82/43/b7/DM00105823.pdf/files/DM00105823.pdf/jcr:content/translations/en.DM00105823.pdf",
+					"value": "UM1724 User manual: STM32 Nucleo-64 board (PDF)"
+				}, {
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/user_manual/1b/03/1b/b4/88/20/4e/cd/DM00105928.pdf/files/DM00105928.pdf/jcr:content/translations/en.DM00105928.pdf",
+					"value": "UM1727 User manual: Getting started with STM32 Nucleo board software development tools (PDF)"
+				}]
+			}]
+		}]
+	}, {
+		"name": "ST NUCLEO-F401RE",
+		"description": [{
+			"type": "text",
+			"value": "STM32 F4 Nucleo-Board von ST"
+		}, {
+			"type": "link",
+			"target": "http://www.st.com/en/evaluation-tools/nucleo-f401re.html",
+			"value": "ST Product-Page"
+		}],
+		"partials": [{
+			"partial": "MicroController",
+			"name": "STM32F401RE",
+			"sections": [{
+				"section": "User Manuals",
+				"entries": [{
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/user_manual/98/2e/fa/4b/e0/82/43/b7/DM00105823.pdf/files/DM00105823.pdf/jcr:content/translations/en.DM00105823.pdf",
+					"value": "UM1724 User manual: STM32 Nucleo-64 board (PDF)"
+				}, {
+					"type": "link",
+					"target": "http://www.st.com/content/ccc/resource/technical/document/user_manual/1b/03/1b/b4/88/20/4e/cd/DM00105928.pdf/files/DM00105928.pdf/jcr:content/translations/en.DM00105928.pdf",
+					"value": "UM1727 User manual: Getting started with STM32 Nucleo board software development tools (PDF)"
+				}]
+			}]
+		}]
+	}, {
+		"rfid": "65416597"
+	}];
+
+/***/ },
+/* 217 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "NCP1117 5V Voltage Regulator",
+		"description": [{
+			"type": "text",
+			"value": "NCP1117 5V - 1.0 A Low-Dropout Positive Fixed and Adjustable Voltage Regulators"
+		}, {
+			"type": "link",
+			"target": "https://www.ehajo.de/bauelemente/aktiv/spannungsversorgung/ncp1117-5v.html?search=200.047&description=true",
+			"value": "eHaJo Product Page"
+		}, {
+			"type": "link",
+			"target": "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF",
+			"value": "onsemi Datasheet (PDF)"
+		}]
+	}, {
+		"name": "TPS71533 3.3V Low-Dropout (LDO) Voltage Regulator",
+		"description": [{
+			"type": "text",
+			"value": "TPS71533 3.3V - 50-mA, 24-V, 3.2-μA Supply Current Low-Dropout Linear Regulator in SC70 package"
+		}, {
+			"type": "link",
+			"target": "https://www.ehajo.de/bauelemente/aktiv/spannungsversorgung/tps71533.html?search=100.024&description=true",
+			"value": "eHaJo Product Page"
+		}, {
+			"type": "link",
+			"target": "http://www.ti.com/lit/ds/symlink/tps715.pdf",
+			"value": "TI Datasheet (PDF)"
+		}]
+	}, {
+		"name": "WS2812B Neopixel",
+		"description": [{
+			"type": "text",
+			"value": "WS2812B - Intelligent control LED integrated light source"
+		}, {
+			"type": "link",
+			"target": "https://www.ehajo.de/bauelemente/aktiv/optoelektronik/ws2812b-intelligente-rgb-led.html?search=200.054&description=true",
+			"value": "eHaJo Product Page"
+		}, {
+			"type": "link",
+			"target": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+			"value": "Worldsemi Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 218 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Adafruit Pi Cobbler",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-pi-cobbler-kit/overview",
+			"value": "Tutorial Overview * (Adafruit)"
+		}]
+	}, {
+		"name": "Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}],
+		"sections": [{
+			"section": "Documentation",
+			"entries": [{
+				"type": "link",
+				"target": "https://www.adafruit.com/product/815",
+				"value": "Product-Page"
+			}, {
+				"type": "link",
+				"target": "https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf",
+				"value": "DataSheet (PDF)"
+			}]
+		}]
+	}, {
+		"name": "Adafruit JTAG (2x10 2.54mm) to SWD (2x5 1.27mm) Cable Adapter Board",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}],
+		"sections": [{
+			"section": "Documentation",
+			"entries": [{
+				"type": "link",
+				"target": "https://www.adafruit.com/product/2094",
+				"value": "Product-Page"
+			}]
+		}]
+	}, {
+		"name": "USB LiIon/LiPoly charger MCP73833",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}, {
+			"type": "link",
+			"target": "https://www.adafruit.com/product/259",
+			"value": "Product-Page"
+		}, {
+			"type": "link",
+			"target": "http://ww1.microchip.com/downloads/en/DeviceDoc/22005b.pdf",
+			"value": "MCP73833 Datsheet (PDF)"
+		}]
+	}, {
+		"name": "AdafruitPowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}],
+		"sections": [{
+			"section": "Documentation",
+			"entries": [{
+				"type": "link",
+				"target": "https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/overview",
+				"value": "Tutorial Overview (Adafruit)"
+			}, {
+				"type": "link",
+				"target": "https://cdn.solarbotics.com/products/datasheets/tps61090.pdf",
+				"value": "TPS61090 Datsheet (PDF)"
+			}]
+		}]
+	}, {
+		"name": "ADS1115 - 16-Bit ADC - 4 Channel with Programmable Gain Amplifier",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts",
+			"value": "Tutorial Overview (Adafruit)"
+		}, {
+			"type": "link",
+			"target": "http://www.ti.com/lit/ds/symlink/ads1115.pdf",
+			"value": "Datasheet (PDF)"
+		}]
+	}, {
+		"name": "BSS138 - 4-CHANNEL I2C-SAFE BI-DIRECTIONAL LOGIC LEVEL CONVERTER",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}, {
+			"type": "link",
+			"target": "https://www.adafruit.com/product/757",
+			"value": "Adafruit Product-Page"
+		}, {
+			"type": "link",
+			"target": "https://cdn-shop.adafruit.com/datasheets/BSS138.pdf",
+			"value": "Datasheet (PDF)"
+		}]
+	}, {
+		"name": "SWD (2x5 1.27mm) Cable Breakout Board",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}, {
+			"type": "link",
+			"target": "https://www.adafruit.com/products/2743",
+			"value": "Adafruit Product-Page"
+		}]
+	}, {
+		"name": "DS2413 1-Wire Two GPIO Controller Breakout",
+		"description": [{
+			"type": "text",
+			"value": ""
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-1-wire-gpio-breakout-ds2413",
+			"value": "Tutorial Overview (Adafruit)"
+		}, {
+			"type": "link",
+			"target": "https://datasheets.maximintegrated.com/en/ds/DS2413.pdf",
+			"value": "Datasheet (PDF)"
+		}]
+	}, {
+		"rfid": "65576597"
+	}];
+
+/***/ },
+/* 219 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Electret Microphone Amplifier",
+		"description": [{
+			"type": "text",
+			"value": "MAX4466 with Adjustable Gain"
+		}, {
+			"type": "link",
+			"target": "https://www.adafruit.com/products/1063",
+			"value": "Product-Page (Adafruit)"
+		}, {
+			"type": "link",
+			"target": "https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf",
+			"value": "Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 220 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Bluefruit LE Micro",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit Bluefruit LE Micro - Bluetooth Low Energy + ATmega32u4 (Discontinued)"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/bluefruit-le-micro-atmega32u4-microcontroller-usb-bluetooth-le-in-one",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Adafruit Bluefruit LE Friend",
+		"description": [{
+			"type": "text",
+			"value": "Bluefruit LE Friend - Bluetooth Low Energy (BLE 4.0) - nRF51822"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/introducing-adafruit-ble-bluetooth-low-energy-friend/software-resources?view=all",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Adafruit Feather 32u4 Bluefruit LE ATmega32u4 8Mhz",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit Feather 32u4 Bluefruit LE"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/overview?view=all",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Bluefruit LE - Bluetooth Low Energy (BLE 4.0) - nRF8001 Breakout",
+		"description": [{
+			"type": "text",
+			"value": "nRF8001 Bluefruit LE Breakout"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/getting-started-with-the-nrf8001-bluefruit-le-breakout/pinouts?view=all",
+			"value": "Adafruit Tutorial"
+		}]
+	}];
+
+/***/ },
+/* 221 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Feather M0 RFM69HCW ATSAMD21G18",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit Feather M0 Radio with RFM69 Packet Radio (433MHz)"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-feather-m0-radio-with-rfm69-packet-radio/overview",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Feather 32u4 RFM69HCW Atmega32u4",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit Feather 32u4 Radio with RFM69 Packet Radio (433MHz)"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-feather-32u4-radio-with-rfm69hcw-module/overview",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Adafruit Radio FeatherWing - RFM69HCW",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit Radio FeatherWing - RFM69HCW (433MHZ)"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/radio-featherwing",
+			"value": "Adafruit Tutorial"
+		}]
+	}, {
+		"name": "Feather M0 RFM96 LoRa Radio ATSAMD21G18",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit Feather M0 RFM96 LoRa Radio (433 MHz)"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module",
+			"value": "Adafruit Tutorial"
+		}]
+	}];
+
+/***/ },
+/* 222 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "LoRa OSHPark Feather Parts",
+		"description": [{
+			"type": "text",
+			"value": "LoRa FeatherWing Development Breakout"
+		}, {
+			"type": "link",
+			"target": "http://syncchannel.blogspot.de/2016/02/lora-featherwing-development-breakout.html",
+			"value": "The Sync Channel Blog"
+		}],
+		"partials": [{
+			"partial": "Ceramic Capacitor",
+			"name": "Ceramic Capacitor 0603 0.1uF 16V",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "http://www.mouser.de/ProductDetail/Vishay/VJ0603Y104KXJAP/?qs=%2fha2pyFadujAlg9bQeFPZ7BD0yBCKWDfL4yyvw%252bmPvMNj5dHwUgufw%3d%3d",
+					"value": "Mouser Product-Page"
+				}, {
+					"type": "link",
+					"target": "http://www.mouser.com/ds/2/427/vjcommercialseries-222796.pdf",
+					"value": "Datenblatt (PDF)"
+				}]
+			}]
+		}, {
+			"partial": "SMD-Vielschichtkondensator G0603 - 1,0uF 16V",
+			"name": "Reichelt: X7R-G0603 1,0/16",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "https://www.reichelt.de/partsIndex.html?ACTION=3;ARTICLE=89719;SEARCH=X7R-G0603%201,0/16",
+					"value": "Reichelt Product-Page"
+				}]
+			}]
+		}, {
+			"partial": "Tantalum Kondnsator 47uF 10V",
+			"name": "Mouser: 647-F951A476MTAAQ2 ",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "http://www.mouser.de/ProductDetail/AVX/F951A476MTAAQ2/?qs=%2fha2pyFaduh6UP5i8fH4Y5d3NVkee0fi6wxL7elzuA5dEMNPmlQJK50IVN8eTNot",
+					"value": "Mouser Product-Page"
+				}, {
+					"type": "link",
+					"target": "http://www.mouser.com/ds/2/40/f95-776234.pdf",
+					"value": "AVX Datasheet"
+				}]
+			}]
+		}, {
+			"partial": "LoRa Tranceiver",
+			"name": "HopeRF RFM96W 433Mhz - LoRaTM Ultra Long Range Wireless Transceiver (functionally comparable to SX1276)",
+			"sections": [{
+				"section": "Documentation",
+				"entries": [{
+					"type": "link",
+					"target": "http://cgi.ebay.de/ws/eBayISAPI.dll?ViewItem&item=171363005217#ht_585wt_1165",
+					"value": "Ebay/anarduino - Product Page"
+				}, {
+					"type": "link",
+					"target": "http://www.hoperf.com/rf_transceiver/lora/RFM95W.html",
+					"value": "HopeRF - Product Page"
+				}, {
+					"type": "link",
+					"target": "http://www.anarduino.com/docs/RFM95_96_97_98W.pdf",
+					"value": "Datasheet (PDF)"
+				}]
+			}]
+		}]
+	}];
+
+/***/ },
+/* 223 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "LM 358 Operationsverstärker",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: LM 358 LOW POWER DUAL OPERATIONAL AMPLIFIERS, SMD, 2-fach, SO-8"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=18716;SEARCH=LM%20358%20",
+			"value": "Reichelt Product page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/LM258_LM358%23STM.pdf",
+			"value": "ST Datasheet (PDF)"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/LM2904_LM258_LM358%23TEX.pdf",
+			"value": "TI Datasheet (PDF)"
+		}]
+	}, {
+		"name": "LM 358 Operationsverstärker",
+		"description": [{
+			"type": "text",
+			"value": "Linear IC - Operationsverstärker Texas Instruments LM358D Mehrzweck SOIC-8"
+		}, {
+			"type": "link",
+			"target": "https://www.conrad.de/de/linear-ic-operationsverstaerker-texas-instruments-lm358d-mehrzweck-soic-8-142506.html",
+			"value": "Conrad Product page"
+		}, {
+			"type": "link",
+			"target": "http://www.produktinfo.conrad.com/datenblaetter/125000-149999/142506-da-01-en-IC_SMD_2_FACH_OP_LM_358_DG_SO8_TID.pdf",
+			"value": "TI Datasheet (PDF)"
+		}]
+	}, {
+		"name": "LM 324 D Low power quad operational amplifiers",
+		"description": [{
+			"type": "text",
+			"value": "Linear IC - Operationsverstärker STMicroelectronics LM324D Mehrzweck SOIC-14"
+		}, {
+			"type": "link",
+			"target": "https://www.conrad.de/de/linear-ic-operationsverstaerker-stmicroelectronics-lm324d-mehrzweck-soic-14-142484.html",
+			"value": "Conrad Product page"
+		}, {
+			"type": "link",
+			"target": "http://www.produktinfo.conrad.com/datenblaetter/125000-149999/142484-da-01-en-IC_SMD_4_FACH_OP_LM_324_SO14__STM.pdf",
+			"value": "ST Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 224 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "BCP 55 NPN Transistor",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: BCP 55-10 SMD / SMD NPN SOT-223 60V 1A 1,3W"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=125392;SEARCH=BCP%2055-10",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A100/DS_BCP55_BCX55_BC55PA-NXP.pdf",
+			"value": "NXP Datasheet"
+		}]
+	}, {
+		"name": "BDP948 PNP Silicon AF Power Transistor",
+		"description": [{
+			"type": "text",
+			"value": "Reichelt: BDP 948 SMD / SMD PNP SOT-223 45V 3A 3W"
+		}, {
+			"type": "link",
+			"target": "https://www.reichelt.de/MOSFET-Transistoren-IXYS/TSM-2313-SMD/3/partsIndex.html?ACTION=3;ARTICLE=41362;SEARCH=BDP%20948",
+			"value": "Reichelt Product Page"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A100/BDP948_BDP950_BDP954-INF.pdf",
+			"value": "Infineon Datasheet"
+		}]
+	}];
+
+/***/ },
+/* 225 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "ST NE555N",
+		"description": [{
+			"type": "text",
+			"value": "General-purpose single bipolar timers DIP-8"
+		}, {
+			"type": "link",
+			"target": "http://www.st.com/content/ccc/resource/technical/document/datasheet/ba/0a/d7/6e/7c/db/4e/12/CD00000479.pdf/files/CD00000479.pdf/jcr:content/translations/en.CD00000479.pdf",
+			"value": "ST Datasheet (PDF)"
+		}]
+	}, {
+		"name": "ST NE555D",
+		"description": [{
+			"type": "text",
+			"value": "General-purpose single bipolar timers SO-8"
+		}, {
+			"type": "link",
+			"target": "http://cdn-reichelt.de/documents/datenblatt/A200/NE555_SA555%23STM.pdf",
+			"value": "ST Datasheet (PDF)"
+		}]
+	}, {
+		"name": "TI LM555CM/NOBP",
+		"description": [{
+			"type": "text",
+			"value": "Linear IC Texas Instruments LM555CM/NOBP SO-8"
+		}, {
+			"type": "link",
+			"target": "http://www.produktinfo.conrad.com/datenblaetter/150000-174999/152343-da-01-en-IC_LM_555_CM___NOBP_SO8__TID.pdf",
+			"value": "TI Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 226 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "LM567CM",
+		"description": [{
+			"type": "text",
+			"value": "LM567x Tone Decoder"
+		}, {
+			"type": "link",
+			"target": "http://www.ti.com/lit/ds/symlink/lm567.pdf",
+			"value": "Datasheet (PDF)"
+		}]
+	}, {
+		"name": "CD4050BE",
+		"description": [{
+			"type": "text",
+			"value": "CD4049UB and CD4050B CMOS Hex Inverting Buffer and Converter"
+		}, {
+			"type": "link",
+			"target": "http://www.ti.com/lit/ds/symlink/cd4050b-mil.pdf",
+			"value": "Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 227 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "LM35 Precision Centigrade Temperature Sensors",
+		"description": [{
+			"type": "text",
+			"value": "TI LM35 Precision Centigrade Temperature Sensors"
+		}, {
+			"type": "link",
+			"target": "http://www.ti.com/lit/ds/symlink/lm35.pdf",
+			"value": "TI Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 228 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Digital Distance Sensor 5cm",
+		"description": [{
+			"type": "text",
+			"value": "Sharp GP2Y0D805Z0F Digital Distance Sensor 5cm"
+		}, {
+			"type": "link",
+			"target": "https://www.pololu.com/product/1131",
+			"value": "Pololu Product Page"
+		}]
+	}, {
+		"name": "Carrier for Sharp Sensors",
+		"description": [{
+			"type": "text",
+			"value": "Pololu Carrier for Sharp GP2Y0D815Z0F, GP2Y0D810Z0F, and GP2Y0D805Z0F Sensors"
+		}, {
+			"type": "link",
+			"target": "https://www.pololu.com/product/1133",
+			"value": "Pololu Product Page"
+		}]
+	}, {
+		"name": "Digital Distance Sensor 10cm",
+		"description": [{
+			"type": "text",
+			"value": "Pololu Carrier with Sharp GP2Y0D810Z0F Digital Distance Sensor 10"
+		}, {
+			"type": "link",
+			"target": "https://www.pololu.com/product/1134",
+			"value": "Pololu Product Page"
+		}]
+	}, {
+		"name": "Adjustable Step-Up/Step-Down Voltage Regulator",
+		"description": [{
+			"type": "text",
+			"value": "Pololu Adjustable Step-Up/Step-Down Voltage Regulator S7V8A"
+		}, {
+			"type": "link",
+			"target": "https://www.pololu.com/product/2118",
+			"value": "Pololu Product Page"
+		}]
+	}, {
+		"name": "38 kHz IR Proximity Sensor",
+		"description": [{
+			"type": "text",
+			"value": "Pololu 38 kHz IR Proximity Sensor, Fixed Gain, High Brightness (irs05a)"
+		}, {
+			"type": "link",
+			"target": "https://www.pololu.com/product/2460",
+			"value": "Pololu Product Page"
+		}, {
+			"type": "link",
+			"target": "https://www.pololu.com/file/download/pololu-38khz-ir-proximity-sensor-irs05a-schematic-diagram.pdf?file_id=0J614",
+			"value": "Schematic (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 229 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Digitaler Lichtsensor SEN10171P",
+		"description": [{
+			"type": "text",
+			"value": "Seeed Studio Digitaler Lichtsensor SEN10171P I2C Passend fuer Serie: C-Control Duino, Grove"
+		}, {
+			"type": "link",
+			"target": "https://www.conrad.de/de/seeed-studio-digitaler-lichtsensor-sen10171p-ic-passend-fuer-serie-c-control-duino-grove-1369529.html",
+			"value": "Conrad Product Page"
+		}]
+	}, {
+		"name": "1-wire Digital Thermometer DS18B20",
+		"description": [{
+			"type": "text",
+			"value": "Programmable Resolution 1-Wire Digital Thermometer"
+		}, {
+			"type": "link",
+			"target": "http://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf",
+			"value": "Datasheet (PDF)"
+		}]
+	}, {
+		"name": "Adafruit 9-DOF IMU Breakout",
+		"description": [{
+			"type": "text",
+			"value": "Adafruit 9-DOF IMU Breakout - L3GD20H + LSM303"
+		}, {
+			"type": "link",
+			"target": "https://learn.adafruit.com/adafruit-9-dof-imu-breakout",
+			"value": "Adafruit Tutorial"
+		}]
+	}];
+
+/***/ },
+/* 230 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
+		"name": "Vibration Motor 11.6 x 4.6 x 4.8mm",
+		"description": [{
+			"type": "text",
+			"value": "Vibration Motor 11.6 x 4.6 x 4.8mm (Plololu #2265)"
+		}, {
+			"type": "link",
+			"target": "https://www.pololu.com/product/2265",
+			"value": "Pololu Product Page"
+		}]
+	}];
 
 /***/ }
 /******/ ]);
