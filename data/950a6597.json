@@ -1,1 +1,96 @@
-[{"name":"LM35 Precision Centigrade Temperature Sensors","description":[{"type":"text","value":"TI LM35 Precision Centigrade Temperature Sensors"},{"type":"link","target":"http://www.ti.com/lit/ds/symlink/lm35.pdf","value":"TI Datasheet (PDF)"}]}]
+[
+  {
+    "name":"LED, SMD 1608 (0603), 112 mcd, orange",
+    "description":[
+      {"type":"text",
+        "value":"Reichelt: LED EL 0603 OR"
+      },
+      {"type":"link",
+        "target":"https://www.reichelt.de/index.html?ACTION=3;ARTICLE=156257;SEARCH=led%20el%200603",
+        "value":"Reichelt Product-Page"
+      },
+      {"type":"link",
+        "target":"http://cdn-reichelt.de/documents/datenblatt/A500/19-213-S2C-AP1Q2B-3T.DOC.pdf",
+        "value":"Everlight Datasheet"
+      }
+    ]
+  },{
+  "name":"LED, SMD 1608 (0603), 200 mcd, warmweiß",
+  "description":[
+    {"type":"text",
+      "value":"Reichelt: LED LL 0603 WW"
+    },
+    {"type":"link",
+      "target":"https://www.reichelt.de/index.html?ACTION=3;ARTICLE=156361;SEARCH=LED%20EL%200603%20WW",
+      "value":"Reichelt Product-Page"
+    },
+    {"type":"link",
+      "target":"http://cdn-reichelt.de/documents/datenblatt/A500/S190W-W6-1E.pdf",
+      "value":"Luckylight Datasheet"
+    }
+  ]
+},{
+  "name":"LED, SMD 2012 (0805), 800 mcd, kaltweiß",
+  "description":[
+    {"type":"text",
+      "value":"Reichelt: LED EL 0805 KW"
+    },
+    {"type":"link",
+      "target":"https://www.reichelt.de/index.html?ACTION=3;ARTICLE=164230;SEARCH=led%20el%200805",
+      "value":"Reichelt Product-Page"
+    },
+    {"type":"link",
+      "target":"http://cdn-reichelt.de/documents/datenblatt/A500/17-21-T1D-AR1T1B2-3T-V3.pdf",
+      "value":"Everlight Datasheet"
+    }
+  ]
+},{
+  "name":"LED, SMD 2012 (0805), 12 mcd, rot",
+  "description":[
+    {"type":"text",
+      "value":"Reichelt: SMD-LED 0805 RT"
+    },
+    {"type":"link",
+      "target":"https://www.reichelt.de/index.html?ACTION=3;ARTICLE=31435;SEARCH=SMD-LED%200805%20RT",
+      "value":"Reichelt Product-Page"
+    },
+    {"type":"link",
+      "target":"http://cdn-reichelt.de/documents/datenblatt/A500/SMD-LED0805GE_SMD-LED0805GN_SMD-LED0805RT%23KIN.pdf",
+      "value":"Kingbright Datasheet"
+    }
+  ]
+},{
+  "name":"LED, SMD 2012 (0805), 12 mcd, grün",
+  "description":[
+    {"type":"text",
+      "value":"Reichelt: SMD-LED 0805 GN"
+    },
+    {"type":"link",
+      "target":"https://www.reichelt.de/index.html?ACTION=3;ARTICLE=31436;SEARCH=smd-led%200805",
+      "value":"Reichelt Product-Page"
+    },
+    {"type":"link",
+      "target":"http://cdn-reichelt.de/documents/datenblatt/A500/SMD-LED0805GE_SMD-LED0805GN_SMD-LED0805RT%23KIN.pdf",
+      "value":"Kingbright Datasheet"
+    }
+  ]
+},{
+  "name":"LED, SMD 2012 (0805), 8 mcd, gelb",
+  "description":[
+    {"type":"text",
+      "value":"Reichelt: SMD-LED 0805 GE"
+    },
+    {"type":"link",
+      "target":"https://www.reichelt.de/index.html?ACTION=3;ARTICLE=31437;SEARCH=smd-led%200805",
+      "value":"Reichelt Product-Page"
+    },
+    {"type":"link",
+      "target":"http://cdn-reichelt.de/documents/datenblatt/A500/SMD-LED0805GE_SMD-LED0805GN_SMD-LED0805RT%23KIN.pdf",
+      "value":"Kingbright Datasheet"
+    }
+  ]
+},
+  {
+    "rfid": "950a6597"
+  }
+]
