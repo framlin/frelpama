@@ -22545,19 +22545,20 @@
 		"./65466597.json": 216,
 		"./65576597.json": 217,
 		"./65596597.json": 218,
-		"./939259f5.json": 219,
-		"./93c75cf5.json": 220,
-		"./950a6597.json": 221,
-		"./95116597.json": 222,
-		"./95336597.json": 223,
-		"./95356597.json": 224,
-		"./a26a65e6.json": 225,
-		"./c30258f5.json": 226,
-		"./d5466497.json": 227,
-		"./d5ab6497.json": 228,
-		"./d5b76497.json": 229,
-		"./d5b96497.json": 230,
-		"./partsIndex.json": 231
+		"./655e6597.json": 219,
+		"./939259f5.json": 220,
+		"./93c75cf5.json": 221,
+		"./950a6597.json": 222,
+		"./95116597.json": 223,
+		"./95336597.json": 224,
+		"./95356597.json": 225,
+		"./a26a65e6.json": 226,
+		"./c30258f5.json": 227,
+		"./d5466497.json": 228,
+		"./d5ab6497.json": 229,
+		"./d5b76497.json": 230,
+		"./d5b96497.json": 231,
+		"./partsIndex.json": 232
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -22910,20 +22911,6 @@
 			"target": "http://www.ti.com/lit/ds/symlink/tps715.pdf",
 			"value": "TI Datasheet (PDF)"
 		}]
-	}, {
-		"name": "WS2812B Neopixel",
-		"description": [{
-			"type": "text",
-			"value": "WS2812B - Intelligent control LED integrated light source"
-		}, {
-			"type": "link",
-			"target": "https://www.ehajo.de/bauelemente/aktiv/optoelektronik/ws2812b-intelligente-rgb-led.html?search=200.054&description=true",
-			"value": "eHaJo Product Page"
-		}, {
-			"type": "link",
-			"target": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
-			"value": "Worldsemi Datasheet (PDF)"
-		}]
 	}];
 
 /***/ },
@@ -23091,6 +23078,28 @@
 	"use strict";
 	
 	module.exports = [{
+		"name": "WS2812B Neopixel",
+		"description": [{
+			"type": "text",
+			"value": "WS2812B - Intelligent control LED integrated light source"
+		}, {
+			"type": "link",
+			"target": "https://www.ehajo.de/bauelemente/aktiv/optoelektronik/ws2812b-intelligente-rgb-led.html?search=200.054&description=true",
+			"value": "eHaJo Product Page"
+		}, {
+			"type": "link",
+			"target": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+			"value": "Worldsemi Datasheet (PDF)"
+		}]
+	}];
+
+/***/ },
+/* 220 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	module.exports = [{
 		"name": "Bluefruit LE Micro",
 		"description": [{
 			"type": "text",
@@ -23133,7 +23142,7 @@
 	}];
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23181,7 +23190,7 @@
 	}];
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23275,7 +23284,7 @@
 	}];
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23354,7 +23363,7 @@
 	}];
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23408,7 +23417,7 @@
 	}];
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23444,7 +23453,7 @@
 	}];
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23482,7 +23491,7 @@
 	}];
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23510,7 +23519,7 @@
 	}];
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23528,7 +23537,7 @@
 	}];
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23590,7 +23599,7 @@
 	}];
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23628,7 +23637,7 @@
 	}];
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23646,7 +23655,7 @@
 	}];
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports) {
 
 	"use strict";

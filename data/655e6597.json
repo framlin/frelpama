@@ -1,0 +1,12 @@
+[
+  {"name":"WS2812B Neopixel",
+    "description":[
+      {"type":"text","value":"WS2812B - Intelligent control LED integrated light source"},
+      {"type":"link",
+        "target":"https://www.ehajo.de/bauelemente/aktiv/optoelektronik/ws2812b-intelligente-rgb-led.html?search=200.054&description=true",
+        "value":"eHaJo Product Page"},
+      {"type":"link","target":"https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+        "value":"Worldsemi Datasheet (PDF)"}
+    ]
+  }
+]
